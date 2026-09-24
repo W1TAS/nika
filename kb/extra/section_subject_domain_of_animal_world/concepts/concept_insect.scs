@@ -1,0 +1,30 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_insect
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[насекомое] (* <- lang_ru;; *);
+	[insect] (* <- lang_en;; *);
+=> nrel_note:
+	[Насекомые — класс беспозвоночных членистоногих, тело которых разделено на голову, грудь и брюшко и которые имеют три пары ног.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_invertebrate;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (насекомое)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Насекомое — беспозвоночное членистоногое животное, тело которого состоит из головы, груди и брюшка и которое имеет три пары ходильных конечностей.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_invertebrate
+			};;
+	*);;

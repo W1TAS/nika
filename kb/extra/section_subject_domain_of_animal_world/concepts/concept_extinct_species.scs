@@ -1,0 +1,30 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_extinct_species
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[вымерший вид] (* <- lang_ru;; *);
+	[extinct species] (* <- lang_en;; *);
+=> nrel_note:
+	[Вымерший вид — вид, ни одна особь которого не сохранилась; например, тур или странствующий голубь.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_biological_species;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (вымерший вид)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Вымерший вид — биологический вид, последняя особь которого погибла, вследствие чего вид перестал существовать.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_biological_species
+			};;
+	*);;

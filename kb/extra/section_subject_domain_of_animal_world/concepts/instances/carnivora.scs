@@ -1,0 +1,14 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+carnivora
+<- concept_wit_entity;
+<- concept_taxon;
+=> nrel_main_idtf:
+	[Хищные] (* <- lang_ru;; *);
+	[Carnivora] (* <- lang_en;; *);
+=> nrel_note:
+	[Хищные — отряд млекопитающих, большинство представителей которого питается другими животными.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Carnivora] (* <- lang_en;; *);
+=> nrel_parent_taxon: mammalia;;

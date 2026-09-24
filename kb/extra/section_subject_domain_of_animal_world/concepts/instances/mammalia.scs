@@ -1,0 +1,14 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+mammalia
+<- concept_wit_entity;
+<- concept_taxon;
+=> nrel_main_idtf:
+	[Млекопитающие] (* <- lang_ru;; *);
+	[Mammalia] (* <- lang_en;; *);
+=> nrel_note:
+	[Млекопитающие — класс позвоночных животных, самки которых выкармливают детёнышей молоком.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Mammalia] (* <- lang_en;; *);
+=> nrel_parent_taxon: chordata;;

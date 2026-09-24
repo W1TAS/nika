@@ -1,0 +1,21 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+blue_shark
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_fish;
+<- concept_predator;
+<- concept_host_organism;
+<- concept_cold_blooded_animal;
+<- concept_wild_animal;
+=> nrel_main_idtf:
+	[синяя акула] (* <- lang_ru;; *);
+	[blue shark] (* <- lang_en;; *);
+=> nrel_note:
+	[Синяя акула — океаническая хищная рыба, которую часто сопровождают рыбы-прилипалы.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Prionace glauca] (* <- lang_en;; *);
+=> nrel_habitat: ocean;
+=> nrel_food_type: food_type_carnivory;
+=> nrel_morphological_feature: limb_fin;;

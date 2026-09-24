@@ -1,0 +1,14 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+chordata
+<- concept_wit_entity;
+<- concept_taxon;
+=> nrel_main_idtf:
+	[Хордовые] (* <- lang_ru;; *);
+	[Chordata] (* <- lang_en;; *);
+=> nrel_note:
+	[Хордовые — тип животных, для которых характерно наличие осевого скелета — хорды — хотя бы на одной стадии развития.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Chordata] (* <- lang_en;; *);
+=> nrel_parent_taxon: animalia;;

@@ -1,0 +1,15 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+canis
+<- concept_wit_entity;
+<- concept_taxon;
+<- concept_genus;
+=> nrel_main_idtf:
+	[Волки] (* <- lang_ru;; *);
+	[Canis] (* <- lang_en;; *);
+=> nrel_note:
+	[Волки — род семейства псовых, включающий волка, шакала и домашнюю собаку.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Canis] (* <- lang_en;; *);
+=> nrel_parent_taxon: canidae;;

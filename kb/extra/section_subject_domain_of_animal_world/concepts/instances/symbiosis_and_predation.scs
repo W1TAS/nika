@@ -1,0 +1,34 @@
+/* Экземпляры понятия "симбиоз", связки неориентированного отношения nrel_symbiosis
+   и связки акта хищничества, компоненты которой заданы ролевыми отношениями. */
+
+symbiosis_of_shark_and_remora
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[симбиоз акулы и рыбы-прилипалы] (* <- lang_ru;; *);
+	[symbiosis of shark and remora] (* <- lang_en;; *);
+=> nrel_note:
+	[Рыба-прилипала прикрепляется к акуле и питается остатками её добычи, при этом акуле она не вредит.] (* <- lang_ru;; *);
+-> rrel_host: blue_shark;
+-> rrel_symbiont: common_remora;;
+
+/* Связка неориентированного отношения "симбиоз*" */
+{
+	blue_shark;
+	common_remora
+}
+<- nrel_symbiosis;;
+
+/* Связка акта хищничества: хищник, жертва и место события */
+predation_act_of_lion_and_zebra
+<- sc_node_tuple;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[акт хищничества льва по отношению к зебре] (* <- lang_ru;; *);
+=> nrel_note:
+	[Львицы прайда охотятся на зебр в саванне, действуя согласованно и загоняя добычу.] (* <- lang_ru;; *);
+-> rrel_predator: lion;
+-> rrel_prey: plains_zebra;
+-> rrel_place: savanna;;
+
+/* Связка отношения "паразитизм*" */
+taiga_tick => nrel_parasitism: red_deer;;

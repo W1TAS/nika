@@ -1,0 +1,46 @@
+/* Относительное понятие (отношение) предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+nrel_parent_taxon
+<- sc_node_non_role_relation;
+<- relation;
+<- concept_wit_entity;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[вышестоящий таксон*] (* <- lang_ru;; *);
+	[parent taxon*] (* <- lang_en;; *);
+=> nrel_note:
+	[Связывает таксон с непосредственно вышестоящим таксоном в биологической классификации: вид — с родом, род — с семейством и так далее.] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_taxon;
+=> nrel_second_domain: concept_taxon;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_taxon;
+				concept_taxon
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (вышестоящий таксон)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Вышестоящий таксон* — бинарное ориентированное отношение, связывающее таксон с таксоном ближайшего более высокого ранга, в состав которого он входит.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_taxon;
+				concept_taxon
+			};;
+	*);;

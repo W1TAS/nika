@@ -1,0 +1,40 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_vertebrate
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[позвоночное животное] (* <- lang_ru;; *);
+	[vertebrate] (* <- lang_en;; *);
+=> nrel_note:
+	[Позвоночные — животные, имеющие внутренний осевой скелет — позвоночник, а также череп, защищающий головной мозг.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_animal;
+<= nrel_subdividing:
+	...
+	(*
+		<- sc_node_tuple;;
+		-> concept_mammal;;
+		-> concept_bird;;
+		-> concept_reptile;;
+		-> concept_amphibian;;
+		-> concept_fish;;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (позвоночное животное)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Позвоночное животное — животное, у которого имеется внутренний осевой скелет в виде позвоночного столба.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_animal
+			};;
+	*);;

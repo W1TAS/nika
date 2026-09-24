@@ -1,0 +1,21 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+cross_spider
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_arachnid;
+<- concept_invertebrate;
+<- concept_predator;
+<- concept_wild_animal;
+=> nrel_main_idtf:
+	[паук-крестовик] (* <- lang_ru;; *);
+	[European garden spider] (* <- lang_en;; *);
+=> nrel_note:
+	[Паук-крестовик — паукообразное, плетущее колесовидную ловчую сеть; на брюшке имеет характерный светлый крест.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Araneus diadematus] (* <- lang_en;; *);
+=> nrel_habitat: mixed_forest;
+=> nrel_food_type: food_type_carnivory;
+=> nrel_predation: honey_bee;
+=> nrel_body_covering: covering_chitin;;

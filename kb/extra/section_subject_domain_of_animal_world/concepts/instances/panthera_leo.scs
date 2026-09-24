@@ -1,0 +1,17 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+panthera_leo
+<- concept_wit_entity;
+<- concept_taxon;
+<- concept_biological_species;
+=> nrel_main_idtf:
+	[лев (вид)] (* <- lang_ru;; *);
+	[Panthera leo] (* <- lang_en;; *);
+=> nrel_note:
+	[Panthera leo — биологический вид рода пантер; в природе сохранилось порядка 20 тысяч особей.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Panthera leo] (* <- lang_en;; *);
+=> nrel_parent_taxon: panthera;
+=> nrel_conservation_status: status_vulnerable;
+=> nrel_listed_in_red_book: iucn_red_list;;

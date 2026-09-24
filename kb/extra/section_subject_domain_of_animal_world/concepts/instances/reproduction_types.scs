@@ -1,0 +1,29 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+reproduction_oviparity
+<- concept_wit_entity;
+<- concept_reproduction_type;
+=> nrel_main_idtf:
+	[яйцерождение] (* <- lang_ru;; *);
+	[oviparity] (* <- lang_en;; *);
+=> nrel_note:
+	[Яйцерождение — способ размножения, при котором зародыш развивается в отложенном яйце вне тела матери.] (* <- lang_ru;; *);;
+
+reproduction_viviparity
+<- concept_wit_entity;
+<- concept_reproduction_type;
+=> nrel_main_idtf:
+	[живорождение] (* <- lang_ru;; *);
+	[viviparity] (* <- lang_en;; *);
+=> nrel_note:
+	[Живорождение — способ размножения, при котором зародыш развивается в организме матери и рождается сформировавшимся.] (* <- lang_ru;; *);;
+
+reproduction_ovoviviparity
+<- concept_wit_entity;
+<- concept_reproduction_type;
+=> nrel_main_idtf:
+	[яйцеживорождение] (* <- lang_ru;; *);
+	[ovoviviparity] (* <- lang_en;; *);
+=> nrel_note:
+	[Яйцеживорождение — способ размножения, при котором яйца развиваются в теле матери, а детёныши выходят из них при рождении.] (* <- lang_ru;; *);;

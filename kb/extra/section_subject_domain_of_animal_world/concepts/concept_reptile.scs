@@ -1,0 +1,32 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_reptile
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[пресмыкающееся] (* <- lang_ru;; *);
+	[reptile] (* <- lang_en;; *);
+=> nrel_note:
+	[Пресмыкающиеся — класс холоднокровных позвоночных, кожа которых покрыта роговыми чешуями или щитками; размножаются преимущественно откладыванием яиц.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_vertebrate;
+<= nrel_inclusion: concept_cold_blooded_animal;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (пресмыкающееся)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Пресмыкающееся — холоднокровное позвоночное животное, кожа которого покрыта роговыми чешуями и которое размножается на суше.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_vertebrate;
+				concept_cold_blooded_animal
+			};;
+	*);;

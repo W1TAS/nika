@@ -1,0 +1,31 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_parasite
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[паразит] (* <- lang_ru;; *);
+	[parasite] (* <- lang_en;; *);
+=> nrel_note:
+	[Паразит — организм, живущий за счёт организма-хозяина и причиняющий ему вред, не убивая его сразу.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_animal;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (паразит)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Паразит — животное, которое обитает на организме-хозяине или внутри него и питается за его счёт.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_animal;
+				concept_host_organism
+			};;
+	*);;

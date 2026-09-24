@@ -1,0 +1,32 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_mammal
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[млекопитающее] (* <- lang_ru;; *);
+	[mammal] (* <- lang_en;; *);
+=> nrel_note:
+	[Млекопитающие — класс теплокровных позвоночных, самки которых выкармливают детёнышей молоком; тело большинства из них покрыто шерстью.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_vertebrate;
+<= nrel_inclusion: concept_warm_blooded_animal;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (млекопитающее)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Млекопитающее — теплокровное позвоночное животное, вскармливающее детёнышей молоком материнских млечных желёз.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_vertebrate;
+				concept_warm_blooded_animal
+			};;
+	*);;

@@ -1,0 +1,14 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+felidae
+<- concept_wit_entity;
+<- concept_taxon;
+=> nrel_main_idtf:
+	[Кошачьи] (* <- lang_ru;; *);
+	[Felidae] (* <- lang_en;; *);
+=> nrel_note:
+	[Кошачьи — семейство отряда хищных, объединяющее наиболее специализированных к охоте млекопитающих.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Felidae] (* <- lang_en;; *);
+=> nrel_parent_taxon: carnivora;;

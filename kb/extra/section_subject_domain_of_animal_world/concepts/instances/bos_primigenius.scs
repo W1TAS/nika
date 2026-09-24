@@ -1,0 +1,17 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+bos_primigenius
+<- concept_wit_entity;
+<- concept_taxon;
+<- concept_biological_species;
+<- concept_extinct_species;
+=> nrel_main_idtf:
+	[тур (вид)] (* <- lang_ru;; *);
+	[Bos primigenius] (* <- lang_en;; *);
+=> nrel_note:
+	[Bos primigenius — вымерший вид диких быков, от которого происходит домашний крупный рогатый скот.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Bos primigenius] (* <- lang_en;; *);
+=> nrel_parent_taxon: bovidae;
+=> nrel_conservation_status: status_extinct;;

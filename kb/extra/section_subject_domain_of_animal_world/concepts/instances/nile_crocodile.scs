@@ -1,0 +1,24 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+nile_crocodile
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_reptile;
+<- concept_predator;
+<- concept_carnivore;
+<- concept_oviparous_animal;
+<- concept_cold_blooded_animal;
+<- concept_wild_animal;
+=> nrel_main_idtf:
+	[нильский крокодил] (* <- lang_ru;; *);
+	[Nile crocodile] (* <- lang_en;; *);
+=> nrel_note:
+	[Нильский крокодил — крупнейшее пресмыкающееся Африки, подстерегающий добычу у водопоя хищник-засадчик.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Crocodylus niloticus] (* <- lang_en;; *);
+=> nrel_habitat: freshwater_body;
+=> nrel_food_type: food_type_carnivory;
+=> nrel_predation: plains_zebra;
+=> nrel_body_covering: covering_scale;
+=> nrel_reproduction_type: reproduction_oviparity;;

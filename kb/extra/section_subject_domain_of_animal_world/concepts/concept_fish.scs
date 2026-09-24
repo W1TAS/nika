@@ -1,0 +1,31 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_fish
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[рыба] (* <- lang_ru;; *);
+	[fish] (* <- lang_en;; *);
+=> nrel_note:
+	[Рыбы — водные позвоночные животные, дышащие жабрами и передвигающиеся при помощи плавников.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_vertebrate;
+<= nrel_inclusion: concept_cold_blooded_animal;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (рыба)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Рыба — водное позвоночное животное, дышащее жабрами и имеющее плавники в качестве органов движения.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_vertebrate
+			};;
+	*);;

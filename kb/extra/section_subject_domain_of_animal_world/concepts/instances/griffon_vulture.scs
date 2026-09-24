@@ -1,0 +1,20 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+griffon_vulture
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_bird;
+<- concept_scavenger;
+<- concept_oviparous_animal;
+<- concept_wild_animal;
+=> nrel_main_idtf:
+	[белоголовый сип] (* <- lang_ru;; *);
+	[griffon vulture] (* <- lang_en;; *);
+=> nrel_note:
+	[Белоголовый сип — крупная хищная птица-падальщик, играющая роль санитара экосистемы: питается преимущественно трупами копытных.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Gyps fulvus] (* <- lang_en;; *);
+=> nrel_food_type: food_type_scavenging;
+=> nrel_morphological_feature: limb_wing;
+=> nrel_body_covering: covering_feather;;

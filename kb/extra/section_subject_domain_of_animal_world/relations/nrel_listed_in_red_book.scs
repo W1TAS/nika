@@ -1,0 +1,46 @@
+/* Относительное понятие (отношение) предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+nrel_listed_in_red_book
+<- sc_node_non_role_relation;
+<- relation;
+<- concept_wit_entity;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[занесён в Красную книгу*] (* <- lang_ru;; *);
+	[listed in red book*] (* <- lang_en;; *);
+=> nrel_note:
+	[Связывает биологический вид с Красной книгой, в которую он занесён.] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_biological_species;
+=> nrel_second_domain: concept_red_book;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_biological_species;
+				concept_red_book
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (занесён в Красную книгу)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Занесён в Красную книгу* — бинарное ориентированное отношение, связывающее биологический вид и документ, в перечень которого этот вид включён.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_biological_species;
+				concept_red_book
+			};;
+	*);;

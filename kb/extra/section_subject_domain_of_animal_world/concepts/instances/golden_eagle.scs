@@ -1,0 +1,23 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+golden_eagle
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_bird;
+<- concept_predator;
+<- concept_carnivore;
+<- concept_oviparous_animal;
+<- concept_wild_animal;
+=> nrel_main_idtf:
+	[беркут] (* <- lang_ru;; *);
+	[golden eagle] (* <- lang_en;; *);
+=> nrel_note:
+	[Беркут — самый крупный орёл фауны Беларуси, охотящийся на зайцев и птиц средней величины; занесён в Красную книгу Республики Беларусь.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Aquila chrysaetos] (* <- lang_en;; *);
+=> nrel_habitat: mixed_forest;
+=> nrel_food_type: food_type_carnivory;
+=> nrel_predation: european_hare;
+=> nrel_morphological_feature: limb_wing;
+=> nrel_body_covering: covering_feather;;

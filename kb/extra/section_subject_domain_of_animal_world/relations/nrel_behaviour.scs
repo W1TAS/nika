@@ -1,0 +1,46 @@
+/* Относительное понятие (отношение) предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+nrel_behaviour
+<- sc_node_non_role_relation;
+<- relation;
+<- concept_wit_entity;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[поведение*] (* <- lang_ru;; *);
+	[behaviour*] (* <- lang_en;; *);
+=> nrel_note:
+	[Связывает животное с характерной для него формой поведения.] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_animal;
+=> nrel_second_domain: concept_animal_behaviour;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_animal;
+				concept_animal_behaviour
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (поведение)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Поведение* — бинарное ориентированное отношение, связывающее животное и характерную для него форму приспособительного поведения.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_animal;
+				concept_animal_behaviour
+			};;
+	*);;

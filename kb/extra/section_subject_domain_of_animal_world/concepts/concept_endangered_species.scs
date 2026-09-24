@@ -1,0 +1,31 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_endangered_species
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[вид под угрозой исчезновения] (* <- lang_ru;; *);
+	[endangered species] (* <- lang_en;; *);
+=> nrel_note:
+	[Вид под угрозой исчезновения — вид, численность которого сократилась настолько, что существует высокая вероятность его вымирания в ближайшем будущем.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_biological_species;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (вид под угрозой исчезновения)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Вид под угрозой исчезновения — биологический вид, которому присвоен охранный статус, указывающий на высокий риск вымирания в естественной среде.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_biological_species;
+				concept_conservation_status
+			};;
+	*);;

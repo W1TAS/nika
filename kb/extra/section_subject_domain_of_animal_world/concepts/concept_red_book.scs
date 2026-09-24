@@ -1,0 +1,30 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_red_book
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Красная книга] (* <- lang_ru;; *);
+	[red book] (* <- lang_en;; *);
+=> nrel_note:
+	[Красная книга — аннотированный список редких и находящихся под угрозой исчезновения видов животных, растений и грибов.] (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (Красная книга)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Красная книга — официальный документ, содержащий перечень видов, нуждающихся в охране, и сведения об их состоянии.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_biological_species;
+				concept_conservation_status
+			};;
+	*);;

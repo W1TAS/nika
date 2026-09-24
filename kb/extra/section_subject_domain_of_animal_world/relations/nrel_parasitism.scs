@@ -1,0 +1,46 @@
+/* Относительное понятие (отношение) предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+nrel_parasitism
+<- sc_node_non_role_relation;
+<- relation;
+<- concept_wit_entity;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[паразитизм*] (* <- lang_ru;; *);
+	[parasitism*] (* <- lang_en;; *);
+=> nrel_note:
+	[Связывает паразита с организмом-хозяином, за счёт которого он существует.] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_parasite;
+=> nrel_second_domain: concept_host_organism;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_parasite;
+				concept_host_organism
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (паразитизм)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Паразитизм* — бинарное ориентированное отношение, связывающее паразита и организм-хозяин, за счёт которого паразит питается и которому он причиняет вред.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_parasite;
+				concept_host_organism
+			};;
+	*);;

@@ -1,0 +1,29 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+gray_wolf
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_mammal;
+<- concept_predator;
+<- concept_carnivore;
+<- concept_wild_animal;
+<- concept_warm_blooded_animal;
+<- concept_viviparous_animal;
+=> nrel_main_idtf:
+	[волк] (* <- lang_ru;; *);
+	[gray wolf] (* <- lang_en;; *);
+=> nrel_note:
+	[Волк — крупный хищник семейства псовых, охотящийся стаей; дикий предок домашней собаки.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Canis lupus] (* <- lang_en;; *);
+=> nrel_body_mass:
+	[от 30 до 60 кг] (* <- lang_ru;; *);
+=> nrel_species: canis_lupus;
+=> nrel_habitat: mixed_forest;
+=> nrel_food_type: food_type_carnivory;
+=> nrel_predation: european_hare;
+=> nrel_part_of_food_chain: forest_food_chain;
+=> nrel_body_covering: covering_wool;
+=> nrel_behaviour: behaviour_hunting;
+=> nrel_domestication: domestic_dog;;

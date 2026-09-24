@@ -1,0 +1,56 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+status_least_concern
+<- concept_wit_entity;
+<- concept_conservation_status;
+=> nrel_main_idtf:
+	[вызывающий наименьшие опасения] (* <- lang_ru;; *);
+	[least concern] (* <- lang_en;; *);
+=> nrel_note:
+	[Вызывающий наименьшие опасения — охранный статус вида, численность которого стабильна и не вызывает беспокойства.] (* <- lang_ru;; *);;
+
+status_vulnerable
+<- concept_wit_entity;
+<- concept_conservation_status;
+=> nrel_main_idtf:
+	[уязвимый вид] (* <- lang_ru;; *);
+	[vulnerable] (* <- lang_en;; *);
+=> nrel_note:
+	[Уязвимый — охранный статус вида, которому угрожает исчезновение при сохранении действующих неблагоприятных факторов.] (* <- lang_ru;; *);;
+
+status_endangered
+<- concept_wit_entity;
+<- concept_conservation_status;
+=> nrel_main_idtf:
+	[исчезающий вид] (* <- lang_ru;; *);
+	[endangered] (* <- lang_en;; *);
+=> nrel_note:
+	[Исчезающий — охранный статус вида, находящегося под очень высоким риском вымирания в дикой природе.] (* <- lang_ru;; *);;
+
+status_extinct
+<- concept_wit_entity;
+<- concept_conservation_status;
+=> nrel_main_idtf:
+	[исчезнувший вид] (* <- lang_ru;; *);
+	[extinct] (* <- lang_en;; *);
+=> nrel_note:
+	[Исчезнувший — охранный статус вида, ни одной живой особи которого не сохранилось.] (* <- lang_ru;; *);;
+
+red_book_of_belarus
+<- concept_wit_entity;
+<- concept_red_book;
+=> nrel_main_idtf:
+	[Красная книга Республики Беларусь] (* <- lang_ru;; *);
+	[Red Book of the Republic of Belarus] (* <- lang_en;; *);
+=> nrel_note:
+	[Красная книга Республики Беларусь — официальный перечень редких и находящихся под угрозой исчезновения видов, охраняемых на территории страны.] (* <- lang_ru;; *);;
+
+iucn_red_list
+<- concept_wit_entity;
+<- concept_red_book;
+=> nrel_main_idtf:
+	[Красный список МСОП] (* <- lang_ru;; *);
+	[IUCN Red List] (* <- lang_en;; *);
+=> nrel_note:
+	[Красный список МСОП — наиболее полный всемирный перечень видов с оценкой риска их исчезновения.] (* <- lang_ru;; *);;

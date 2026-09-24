@@ -1,0 +1,46 @@
+/* Относительное понятие (отношение) предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+nrel_body_covering
+<- sc_node_non_role_relation;
+<- relation;
+<- concept_wit_entity;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[покров тела*] (* <- lang_ru;; *);
+	[body covering*] (* <- lang_en;; *);
+=> nrel_note:
+	[Связывает животное с типом покрова его тела.] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_animal;
+=> nrel_second_domain: concept_body_covering;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_animal;
+				concept_body_covering
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (покров тела)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Покров тела* — бинарное ориентированное отношение, связывающее животное и тип наружного покрова его тела.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_animal;
+				concept_body_covering
+			};;
+	*);;

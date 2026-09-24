@@ -1,0 +1,46 @@
+/* Относительное понятие (отношение) предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+nrel_habitat
+<- sc_node_non_role_relation;
+<- relation;
+<- concept_wit_entity;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[местообитание*] (* <- lang_ru;; *);
+	[habitat*] (* <- lang_en;; *);
+=> nrel_note:
+	[Связывает животное с местообитанием, в котором оно встречается в природе.] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_animal;
+=> nrel_second_domain: concept_habitat;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_animal;
+				concept_habitat
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (местообитание)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Местообитание* — бинарное ориентированное отношение, связывающее животное и участок природной среды, в котором это животное обитает.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_animal;
+				concept_habitat
+			};;
+	*);;

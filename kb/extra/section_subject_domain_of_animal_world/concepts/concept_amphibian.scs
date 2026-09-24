@@ -1,0 +1,31 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_amphibian
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[земноводное] (* <- lang_ru;; *);
+	[amphibian] (* <- lang_en;; *);
+=> nrel_note:
+	[Земноводные — класс холоднокровных позвоночных, жизненный цикл которых связан и с водой, и с сушей; личинки дышат жабрами, взрослые особи — лёгкими и кожей.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_vertebrate;
+<= nrel_inclusion: concept_cold_blooded_animal;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (земноводное)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Земноводное — холоднокровное позвоночное животное, развитие которого проходит в воде, а взрослая стадия — преимущественно на суше.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_vertebrate
+			};;
+	*);;

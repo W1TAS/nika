@@ -1,0 +1,33 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_bird
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[птица] (* <- lang_ru;; *);
+	[bird] (* <- lang_en;; *);
+=> nrel_note:
+	[Птицы — класс теплокровных яйцекладущих позвоночных, тело которых покрыто перьями, а передние конечности преобразованы в крылья.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_vertebrate;
+<= nrel_inclusion: concept_warm_blooded_animal;
+<= nrel_inclusion: concept_oviparous_animal;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (птица)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Птица — теплокровное яйцекладущее позвоночное животное, тело которого покрыто перьями, а передние конечности преобразованы в крылья.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_vertebrate;
+				concept_oviparous_animal
+			};;
+	*);;

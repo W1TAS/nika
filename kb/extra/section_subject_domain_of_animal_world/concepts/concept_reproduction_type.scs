@@ -1,0 +1,29 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_reproduction_type
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[тип размножения] (* <- lang_ru;; *);
+	[reproduction type] (* <- lang_en;; *);
+=> nrel_note:
+	[Тип размножения — способ воспроизведения потомства: яйцерождение, живорождение, яйцеживорождение.] (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (тип размножения)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Тип размножения — класс, характеризующий способ воспроизведения потомства у животного.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_animal
+			};;
+	*);;

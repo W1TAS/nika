@@ -1,0 +1,31 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_domestic_animal
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[домашнее животное] (* <- lang_ru;; *);
+	[domestic animal] (* <- lang_en;; *);
+=> nrel_note:
+	[Домашнее животное — животное, одомашненное человеком и разводимое им для хозяйственных или эстетических целей.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_animal;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (домашнее животное)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Домашнее животное — животное, полученное в результате одомашнивания дикого предка и содержащееся человеком.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_animal;
+				concept_wild_animal
+			};;
+	*);;

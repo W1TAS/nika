@@ -1,0 +1,20 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+domestic_cat
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_mammal;
+<- concept_domestic_animal;
+<- concept_predator;
+<- concept_carnivore;
+<- concept_warm_blooded_animal;
+=> nrel_main_idtf:
+	[домашняя кошка] (* <- lang_ru;; *);
+	[domestic cat] (* <- lang_en;; *);
+=> nrel_note:
+	[Домашняя кошка — одомашненное млекопитающее семейства кошачьих, сохранившее повадки одиночного хищника.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Felis catus] (* <- lang_en;; *);
+=> nrel_food_type: food_type_carnivory;
+=> nrel_body_covering: covering_wool;;

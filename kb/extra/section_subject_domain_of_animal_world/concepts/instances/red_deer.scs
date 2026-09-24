@@ -1,0 +1,22 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+red_deer
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_mammal;
+<- concept_herbivore;
+<- concept_prey;
+<- concept_host_organism;
+<- concept_wild_animal;
+<- concept_warm_blooded_animal;
+=> nrel_main_idtf:
+	[благородный олень] (* <- lang_ru;; *);
+	[red deer] (* <- lang_en;; *);
+=> nrel_note:
+	[Благородный олень — крупное травоядное лесов и лесостепей; самцы ежегодно сбрасывают и отращивают ветвистые рога.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Cervus elaphus] (* <- lang_en;; *);
+=> nrel_habitat: mixed_forest;
+=> nrel_food_type: food_type_herbivory;
+=> nrel_morphological_feature: feature_horn;;

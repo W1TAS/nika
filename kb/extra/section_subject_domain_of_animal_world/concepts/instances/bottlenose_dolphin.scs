@@ -1,0 +1,22 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+bottlenose_dolphin
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_mammal;
+<- concept_predator;
+<- concept_wild_animal;
+<- concept_warm_blooded_animal;
+<- concept_viviparous_animal;
+=> nrel_main_idtf:
+	[афалина] (* <- lang_ru;; *);
+	[bottlenose dolphin] (* <- lang_en;; *);
+=> nrel_note:
+	[Афалина — морское млекопитающее отряда китообразных, обладающее эхолокацией и одним из самых высоких среди животных уровней рассудочной деятельности.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Tursiops truncatus] (* <- lang_en;; *);
+=> nrel_habitat: ocean;
+=> nrel_food_type: food_type_carnivory;
+=> nrel_morphological_feature: limb_fin;
+=> nrel_reproduction_type: reproduction_viviparity;;

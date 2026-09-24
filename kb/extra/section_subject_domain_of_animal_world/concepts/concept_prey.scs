@@ -1,0 +1,31 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_prey
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[жертва] (* <- lang_ru;; *);
+	[prey] (* <- lang_en;; *);
+=> nrel_note:
+	[Жертва — животное, которое служит добычей для хищника.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_animal;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (жертва)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Жертва — животное, которое является объектом охоты со стороны хищника.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_animal;
+				concept_predator
+			};;
+	*);;

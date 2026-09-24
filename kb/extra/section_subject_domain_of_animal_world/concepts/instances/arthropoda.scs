@@ -1,0 +1,14 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+arthropoda
+<- concept_wit_entity;
+<- concept_taxon;
+=> nrel_main_idtf:
+	[Членистоногие] (* <- lang_ru;; *);
+	[Arthropoda] (* <- lang_en;; *);
+=> nrel_note:
+	[Членистоногие — самый многочисленный тип животных, обладающих сегментированным телом и наружным хитиновым скелетом.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Arthropoda] (* <- lang_en;; *);
+=> nrel_parent_taxon: animalia;;

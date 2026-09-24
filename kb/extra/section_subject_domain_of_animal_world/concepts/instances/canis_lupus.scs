@@ -1,0 +1,16 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+canis_lupus
+<- concept_wit_entity;
+<- concept_taxon;
+<- concept_biological_species;
+=> nrel_main_idtf:
+	[волк (вид)] (* <- lang_ru;; *);
+	[Canis lupus] (* <- lang_en;; *);
+=> nrel_note:
+	[Canis lupus — биологический вид семейства псовых, широко распространённый в Северном полушарии.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Canis lupus] (* <- lang_en;; *);
+=> nrel_parent_taxon: canis;
+=> nrel_conservation_status: status_least_concern;;

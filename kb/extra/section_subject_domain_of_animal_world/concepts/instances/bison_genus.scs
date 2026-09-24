@@ -1,0 +1,15 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+bison_genus
+<- concept_wit_entity;
+<- concept_taxon;
+<- concept_genus;
+=> nrel_main_idtf:
+	[Бизоны] (* <- lang_ru;; *);
+	[Bison] (* <- lang_en;; *);
+=> nrel_note:
+	[Бизоны — род крупных полорогих, включающий американского бизона и европейского зубра.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Bison] (* <- lang_en;; *);
+=> nrel_parent_taxon: bovidae;;

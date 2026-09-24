@@ -1,0 +1,38 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_invertebrate
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[беспозвоночное животное] (* <- lang_ru;; *);
+	[invertebrate] (* <- lang_en;; *);
+=> nrel_note:
+	[Беспозвоночные — животные, не имеющие позвоночника; к ним относят около 97 % всех известных видов животных.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_animal;
+<= nrel_subdividing:
+	...
+	(*
+		<- sc_node_tuple;;
+		-> concept_insect;;
+		-> concept_arachnid;;
+		-> concept_mollusk;;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (беспозвоночное животное)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Беспозвоночное животное — животное, у которого отсутствует внутренний осевой скелет.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_animal
+			};;
+	*);;

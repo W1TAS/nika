@@ -1,0 +1,30 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_mollusk
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[моллюск] (* <- lang_ru;; *);
+	[mollusk] (* <- lang_en;; *);
+=> nrel_note:
+	[Моллюски — тип беспозвоночных с мягким несегментированным телом, у многих защищённым раковиной.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_invertebrate;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (моллюск)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Моллюск — беспозвоночное животное с мягким несегментированным телом, обычно заключённым в раковину.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_invertebrate
+			};;
+	*);;

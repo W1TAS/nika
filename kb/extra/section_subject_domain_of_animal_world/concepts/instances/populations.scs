@@ -1,0 +1,16 @@
+/* Связки небинарного ориентированного отношения nrel_population
+   (популяция вида в экосистеме*): вид + экосистема + численность популяции. */
+
+...
+<- nrel_population;
+<- sc_node_tuple;
+-> rrel_1: bison_bonasus;
+-> rrel_2: ecosystem_of_belovezhskaya_pushcha;
+-> rrel_3: [более 1000 особей] (* <- lang_ru;; *);;
+
+...
+<- nrel_population;
+<- sc_node_tuple;
+-> rrel_1: panthera_leo;
+-> rrel_2: savanna_ecosystem;
+-> rrel_3: [около 20 000 особей] (* <- lang_ru;; *);;

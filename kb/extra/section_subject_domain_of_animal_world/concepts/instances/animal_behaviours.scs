@@ -1,0 +1,29 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+behaviour_hibernation
+<- concept_wit_entity;
+<- concept_animal_behaviour;
+=> nrel_main_idtf:
+	[спячка] (* <- lang_ru;; *);
+	[hibernation] (* <- lang_en;; *);
+=> nrel_note:
+	[Спячка — состояние резкого замедления обмена веществ, позволяющее животному пережить неблагоприятный сезон.] (* <- lang_ru;; *);;
+
+behaviour_migration
+<- concept_wit_entity;
+<- concept_animal_behaviour;
+=> nrel_main_idtf:
+	[миграция] (* <- lang_ru;; *);
+	[migration] (* <- lang_en;; *);
+=> nrel_note:
+	[Миграция — регулярное сезонное перемещение животных между районами размножения и зимовки.] (* <- lang_ru;; *);;
+
+behaviour_hunting
+<- concept_wit_entity;
+<- concept_animal_behaviour;
+=> nrel_main_idtf:
+	[охотничье поведение] (* <- lang_ru;; *);
+	[hunting behaviour] (* <- lang_en;; *);
+=> nrel_note:
+	[Охотничье поведение — совокупность действий хищника по выслеживанию, преследованию и умерщвлению добычи.] (* <- lang_ru;; *);;

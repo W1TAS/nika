@@ -1,0 +1,31 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_herbivore
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[травоядное животное] (* <- lang_ru;; *);
+	[herbivore] (* <- lang_en;; *);
+=> nrel_note:
+	[Травоядные — животные, питающиеся преимущественно растительной пищей: травой, листьями, побегами, плодами.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_animal;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (травоядное животное)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Травоядное животное — животное, рацион которого состоит преимущественно из растительной пищи.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_animal;
+				concept_food_type
+			};;
+	*);;

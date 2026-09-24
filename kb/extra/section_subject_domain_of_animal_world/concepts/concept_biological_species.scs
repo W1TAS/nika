@@ -1,0 +1,37 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_biological_species
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[биологический вид] (* <- lang_ru;; *);
+	[biological species] (* <- lang_en;; *);
+=> nrel_note:
+	[Биологический вид — основная единица систематики: совокупность особей, способных скрещиваться между собой и давать плодовитое потомство.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_taxon;
+<= nrel_subdividing:
+	...
+	(*
+		<- sc_node_tuple;;
+		-> concept_endangered_species;;
+		-> concept_extinct_species;;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (биологический вид)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Биологический вид — совокупность особей, обладающих общими признаками, занимающих общий ареал и способных при скрещивании давать плодовитое потомство.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_taxon
+			};;
+	*);;

@@ -1,0 +1,19 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+domestic_dog
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_mammal;
+<- concept_domestic_animal;
+<- concept_omnivore;
+<- concept_warm_blooded_animal;
+=> nrel_main_idtf:
+	[домашняя собака] (* <- lang_ru;; *);
+	[domestic dog] (* <- lang_en;; *);
+=> nrel_note:
+	[Домашняя собака — первое одомашненное человеком животное, происходящее от волка.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Canis familiaris] (* <- lang_en;; *);
+=> nrel_food_type: food_type_omnivory;
+=> nrel_body_covering: covering_wool;;

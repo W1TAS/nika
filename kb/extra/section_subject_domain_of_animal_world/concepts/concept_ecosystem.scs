@@ -1,0 +1,31 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_ecosystem
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[экосистема] (* <- lang_ru;; *);
+	[ecosystem] (* <- lang_en;; *);
+=> nrel_note:
+	[Экосистема — совокупность живых организмов и среды их обитания, связанных обменом веществ и энергии.] (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (экосистема)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Экосистема — единый природный комплекс, образованный сообществом живых организмов и средой их обитания, связанными потоками вещества и энергии.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_animal;
+				concept_habitat;
+				concept_food_chain
+			};;
+	*);;

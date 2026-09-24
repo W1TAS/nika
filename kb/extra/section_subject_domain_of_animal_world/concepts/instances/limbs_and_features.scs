@@ -1,0 +1,56 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+limb_wing
+<- concept_wit_entity;
+<- concept_morphological_feature;
+=> nrel_main_idtf:
+	[крыло] (* <- lang_ru;; *);
+	[wing] (* <- lang_en;; *);
+=> nrel_note:
+	[Крыло — конечность, преобразованная для полёта; имеется у птиц, летучих мышей и насекомых.] (* <- lang_ru;; *);;
+
+limb_fin
+<- concept_wit_entity;
+<- concept_morphological_feature;
+=> nrel_main_idtf:
+	[плавник] (* <- lang_ru;; *);
+	[fin] (* <- lang_en;; *);
+=> nrel_note:
+	[Плавник — орган движения водных животных, обеспечивающий передвижение и устойчивость в воде.] (* <- lang_ru;; *);;
+
+limb_paw
+<- concept_wit_entity;
+<- concept_morphological_feature;
+=> nrel_main_idtf:
+	[лапа] (* <- lang_ru;; *);
+	[paw] (* <- lang_en;; *);
+=> nrel_note:
+	[Лапа — конечность наземного животного, приспособленная для ходьбы, бега, а у хищных — для удержания добычи.] (* <- lang_ru;; *);;
+
+feature_mane
+<- concept_wit_entity;
+<- concept_morphological_feature;
+=> nrel_main_idtf:
+	[грива] (* <- lang_ru;; *);
+	[mane] (* <- lang_en;; *);
+=> nrel_note:
+	[Грива — длинные волосы на шее и груди самцов льва, служащие признаком зрелости и защитой при схватках.] (* <- lang_ru;; *);;
+
+feature_trunk
+<- concept_wit_entity;
+<- concept_morphological_feature;
+=> nrel_main_idtf:
+	[хобот] (* <- lang_ru;; *);
+	[trunk] (* <- lang_en;; *);
+=> nrel_note:
+	[Хобот — удлинённый мускулистый орган слона, образованный сросшимися носом и верхней губой.] (* <- lang_ru;; *);;
+
+feature_horn
+<- concept_wit_entity;
+<- concept_morphological_feature;
+=> nrel_main_idtf:
+	[рога] (* <- lang_ru;; *);
+	[horns] (* <- lang_en;; *);
+=> nrel_note:
+	[Рога — выросты на голове копытных, используемые для защиты и в турнирных боях.] (* <- lang_ru;; *);;

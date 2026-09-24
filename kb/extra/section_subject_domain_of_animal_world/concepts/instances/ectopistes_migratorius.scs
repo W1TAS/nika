@@ -1,0 +1,16 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+ectopistes_migratorius
+<- concept_wit_entity;
+<- concept_taxon;
+<- concept_biological_species;
+<- concept_extinct_species;
+=> nrel_main_idtf:
+	[странствующий голубь (вид)] (* <- lang_ru;; *);
+	[Ectopistes migratorius] (* <- lang_en;; *);
+=> nrel_note:
+	[Странствующий голубь — вид, ещё в XIX веке насчитывавший миллиарды особей и полностью истреблённый человеком к 1914 году.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Ectopistes migratorius] (* <- lang_en;; *);
+=> nrel_conservation_status: status_extinct;;

@@ -1,0 +1,19 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+common_octopus
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_mollusk;
+<- concept_invertebrate;
+<- concept_predator;
+<- concept_wild_animal;
+=> nrel_main_idtf:
+	[обыкновенный осьминог] (* <- lang_ru;; *);
+	[common octopus] (* <- lang_en;; *);
+=> nrel_note:
+	[Обыкновенный осьминог — головоногий моллюск с восемью щупальцами, способный менять окраску и считающийся самым «умным» среди беспозвоночных.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Octopus vulgaris] (* <- lang_en;; *);
+=> nrel_habitat: ocean;
+=> nrel_food_type: food_type_carnivory;;

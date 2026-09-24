@@ -1,0 +1,30 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+honey_bee
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_insect;
+<- concept_invertebrate;
+<- concept_prey;
+<- concept_wild_animal;
+=> nrel_main_idtf:
+	[медоносная пчела] (* <- lang_ru;; *);
+	[honey bee] (* <- lang_en;; *);
+=> nrel_note:
+	[Медоносная пчела — общественное насекомое, опыляющее растения и производящее мёд; развивается с полным превращением.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Apis mellifera] (* <- lang_en;; *);
+=> nrel_habitat: meadow;
+=> nrel_body_covering: covering_chitin;
+=> nrel_morphological_feature: limb_wing;
+=> nrel_reproduction_type: reproduction_oviparity;
+=> nrel_life_cycle:
+	...
+	(*
+		<- sc_node_tuple;;
+		-> rrel_1: stage_egg;;
+		-> rrel_2: stage_larva;;
+		-> rrel_3: stage_pupa;;
+		-> rrel_4: stage_imago;;
+	*);;

@@ -1,0 +1,52 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_animal
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[животное] (* <- lang_ru;; *);
+	[animal] (* <- lang_en;; *);
+=> nrel_note:
+	[Животное — многоклеточный гетеротрофный организм из царства Животные, клетки которого лишены плотной клеточной стенки и который хотя бы на одной стадии жизненного цикла способен к активному передвижению.] (* <- lang_ru;; *);
+<= nrel_subdividing:
+	...
+	(*
+		<- sc_node_tuple;;
+		-> concept_vertebrate;;
+		-> concept_invertebrate;;
+	*);
+<= nrel_subdividing:
+	...
+	(*
+		<- sc_node_tuple;;
+		-> concept_herbivore;;
+		-> concept_carnivore;;
+		-> concept_omnivore;;
+	*);
+<= nrel_subdividing:
+	...
+	(*
+		<- sc_node_tuple;;
+		-> concept_wild_animal;;
+		-> concept_domestic_animal;;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (животное)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Животное — экземпляр класса организмов царства Животные, обладающий гетеротрофным типом питания, тканевым строением тела и способностью к активному движению.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_taxon;
+				concept_food_type
+			};;
+	*);;

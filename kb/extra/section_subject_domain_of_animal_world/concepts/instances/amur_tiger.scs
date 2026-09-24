@@ -1,0 +1,26 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+amur_tiger
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_mammal;
+<- concept_predator;
+<- concept_carnivore;
+<- concept_wild_animal;
+<- concept_warm_blooded_animal;
+=> nrel_main_idtf:
+	[амурский тигр] (* <- lang_ru;; *);
+	[Amur tiger] (* <- lang_en;; *);
+=> nrel_note:
+	[Амурский тигр — самый крупный подвид тигра, обитающий на Дальнем Востоке; находится под угрозой исчезновения.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Panthera tigris altaica] (* <- lang_en;; *);
+=> nrel_body_mass:
+	[до 300 кг] (* <- lang_ru;; *);
+=> nrel_species: panthera_tigris_altaica;
+=> nrel_habitat: mixed_forest;
+=> nrel_food_type: food_type_carnivory;
+=> nrel_predation: red_deer;
+=> nrel_body_covering: covering_wool;
+=> nrel_behaviour: behaviour_hunting;;

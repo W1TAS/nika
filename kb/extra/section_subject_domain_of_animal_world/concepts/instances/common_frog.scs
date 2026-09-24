@@ -1,0 +1,27 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+common_frog
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_amphibian;
+<- concept_cold_blooded_animal;
+<- concept_oviparous_animal;
+<- concept_wild_animal;
+=> nrel_main_idtf:
+	[травяная лягушка] (* <- lang_ru;; *);
+	[common frog] (* <- lang_en;; *);
+=> nrel_note:
+	[Травяная лягушка — земноводное, развитие которого проходит в воде: из икры выходит головастик, дышащий жабрами, и лишь затем превращается во взрослую особь.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Rana temporaria] (* <- lang_en;; *);
+=> nrel_habitat: freshwater_body;
+=> nrel_food_type: food_type_carnivory;
+=> nrel_life_cycle:
+	...
+	(*
+		<- sc_node_tuple;;
+		-> rrel_1: stage_egg;;
+		-> rrel_2: stage_tadpole;;
+		-> rrel_3: stage_adult;;
+	*);;

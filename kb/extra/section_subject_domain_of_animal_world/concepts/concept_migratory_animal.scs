@@ -1,0 +1,31 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_migratory_animal
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[мигрирующее животное] (* <- lang_ru;; *);
+	[migratory animal] (* <- lang_en;; *);
+=> nrel_note:
+	[Мигрирующие животные совершают регулярные сезонные перемещения между районами размножения и зимовки.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_animal;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (мигрирующее животное)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Мигрирующее животное — животное, которое регулярно совершает сезонные перемещения между удалёнными местообитаниями.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_animal;
+				concept_habitat
+			};;
+	*);;

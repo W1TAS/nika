@@ -1,0 +1,30 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_cold_blooded_animal
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[холоднокровное животное] (* <- lang_ru;; *);
+	[cold-blooded animal] (* <- lang_en;; *);
+=> nrel_note:
+	[Холоднокровные животные не поддерживают постоянную температуру тела: она зависит от температуры окружающей среды.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_animal;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (холоднокровное животное)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Холоднокровное животное — животное, температура тела которого определяется температурой окружающей среды.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_animal
+			};;
+	*);;

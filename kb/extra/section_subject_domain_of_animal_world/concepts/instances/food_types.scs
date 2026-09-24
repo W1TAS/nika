@@ -1,0 +1,38 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+food_type_herbivory
+<- concept_wit_entity;
+<- concept_food_type;
+=> nrel_main_idtf:
+	[травоядность] (* <- lang_ru;; *);
+	[herbivory] (* <- lang_en;; *);
+=> nrel_note:
+	[Травоядность — тип питания, при котором основу рациона составляет растительная пища.] (* <- lang_ru;; *);;
+
+food_type_carnivory
+<- concept_wit_entity;
+<- concept_food_type;
+=> nrel_main_idtf:
+	[плотоядность] (* <- lang_ru;; *);
+	[carnivory] (* <- lang_en;; *);
+=> nrel_note:
+	[Плотоядность — тип питания, при котором основу рациона составляет пища животного происхождения.] (* <- lang_ru;; *);;
+
+food_type_omnivory
+<- concept_wit_entity;
+<- concept_food_type;
+=> nrel_main_idtf:
+	[всеядность] (* <- lang_ru;; *);
+	[omnivory] (* <- lang_en;; *);
+=> nrel_note:
+	[Всеядность — тип питания, при котором в рацион входит как растительная, так и животная пища.] (* <- lang_ru;; *);;
+
+food_type_scavenging
+<- concept_wit_entity;
+<- concept_food_type;
+=> nrel_main_idtf:
+	[питание падалью] (* <- lang_ru;; *);
+	[scavenging] (* <- lang_en;; *);
+=> nrel_note:
+	[Питание падалью — тип питания, при котором животное поедает останки погибших животных.] (* <- lang_ru;; *);;

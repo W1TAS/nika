@@ -1,0 +1,31 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_viviparous_animal
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[живородящее животное] (* <- lang_ru;; *);
+	[viviparous animal] (* <- lang_en;; *);
+=> nrel_note:
+	[Живородящие животные рождают сформировавшихся детёнышей, развитие которых происходит в организме матери.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_animal;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (живородящее животное)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Живородящее животное — животное, детёныши которого развиваются внутри материнского организма и рождаются живыми.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_animal;
+				concept_reproduction_type
+			};;
+	*);;

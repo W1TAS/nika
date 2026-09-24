@@ -1,0 +1,13 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_body_covering
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[покров тела] (* <- lang_ru;; *);
+	[body covering] (* <- lang_en;; *);
+=> nrel_note:
+	[Покров тела — наружный слой, защищающий организм: шерсть, перья, чешуя, хитиновый панцирь.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_morphological_feature;;

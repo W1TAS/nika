@@ -1,0 +1,14 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+canidae
+<- concept_wit_entity;
+<- concept_taxon;
+=> nrel_main_idtf:
+	[Псовые] (* <- lang_ru;; *);
+	[Canidae] (* <- lang_en;; *);
+=> nrel_note:
+	[Псовые — семейство хищных млекопитающих, к которому относятся волк, лисица и домашняя собака.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Canidae] (* <- lang_en;; *);
+=> nrel_parent_taxon: carnivora;;

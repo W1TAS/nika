@@ -1,0 +1,46 @@
+/* Относительное понятие (отношение) предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+nrel_symbiosis
+<- sc_node_non_role_relation;
+<- relation;
+<- concept_wit_entity;
+<- binary_relation;
+<- unoriented_relation;
+<- antireflexive_relation;
+<- symmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[симбиоз*] (* <- lang_ru;; *);
+	[symbiosis*] (* <- lang_en;; *);
+=> nrel_note:
+	[Неориентированное отношение, связывающее два организма, находящихся в симбиотических отношениях.] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_animal;
+=> nrel_second_domain: concept_animal;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_animal;
+				concept_animal
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (симбиоз)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Симбиоз* — бинарное неориентированное отношение, связывающее два организма разных видов, длительное совместное существование которых является взаимовыгодным.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_animal;
+				concept_animal
+			};;
+	*);;

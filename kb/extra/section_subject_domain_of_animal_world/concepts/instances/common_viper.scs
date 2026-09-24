@@ -1,0 +1,21 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+common_viper
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_reptile;
+<- concept_predator;
+<- concept_cold_blooded_animal;
+<- concept_wild_animal;
+=> nrel_main_idtf:
+	[обыкновенная гадюка] (* <- lang_ru;; *);
+	[common European adder] (* <- lang_en;; *);
+=> nrel_note:
+	[Обыкновенная гадюка — ядовитая змея лесной зоны Евразии, охотящаяся на мелких грызунов.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Vipera berus] (* <- lang_en;; *);
+=> nrel_habitat: mixed_forest;
+=> nrel_food_type: food_type_carnivory;
+=> nrel_body_covering: covering_scale;
+=> nrel_reproduction_type: reproduction_ovoviviparity;;

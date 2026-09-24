@@ -1,0 +1,21 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+european_hare
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_mammal;
+<- concept_herbivore;
+<- concept_prey;
+<- concept_wild_animal;
+<- concept_warm_blooded_animal;
+=> nrel_main_idtf:
+	[заяц-русак] (* <- lang_ru;; *);
+	[European hare] (* <- lang_en;; *);
+=> nrel_note:
+	[Заяц-русак — травоядное млекопитающее открытых пространств, спасающееся от хищников быстрым бегом и резкими поворотами.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Lepus europaeus] (* <- lang_en;; *);
+=> nrel_habitat: meadow;
+=> nrel_food_type: food_type_herbivory;
+=> nrel_part_of_food_chain: forest_food_chain;;

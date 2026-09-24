@@ -1,0 +1,38 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+covering_wool
+<- concept_wit_entity;
+<- concept_body_covering;
+=> nrel_main_idtf:
+	[шерсть] (* <- lang_ru;; *);
+	[wool] (* <- lang_en;; *);
+=> nrel_note:
+	[Шерсть — волосяной покров млекопитающих, выполняющий теплоизолирующую и защитную функции.] (* <- lang_ru;; *);;
+
+covering_feather
+<- concept_wit_entity;
+<- concept_body_covering;
+=> nrel_main_idtf:
+	[перьевой покров] (* <- lang_ru;; *);
+	[feathers] (* <- lang_en;; *);
+=> nrel_note:
+	[Перьевой покров — характерный для птиц покров тела, обеспечивающий полёт и теплоизоляцию.] (* <- lang_ru;; *);;
+
+covering_scale
+<- concept_wit_entity;
+<- concept_body_covering;
+=> nrel_main_idtf:
+	[чешуя] (* <- lang_ru;; *);
+	[scales] (* <- lang_en;; *);
+=> nrel_note:
+	[Чешуя — покров тела рыб и пресмыкающихся, образованный костными или роговыми пластинками.] (* <- lang_ru;; *);;
+
+covering_chitin
+<- concept_wit_entity;
+<- concept_body_covering;
+=> nrel_main_idtf:
+	[хитиновый покров] (* <- lang_ru;; *);
+	[chitinous exoskeleton] (* <- lang_en;; *);
+=> nrel_note:
+	[Хитиновый покров — наружный скелет членистоногих, выполняющий защитную и опорную функции.] (* <- lang_ru;; *);;

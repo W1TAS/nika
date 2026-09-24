@@ -1,0 +1,36 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_taxon
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[таксон] (* <- lang_ru;; *);
+	[taxon] (* <- lang_en;; *);
+=> nrel_note:
+	[Таксон — группа организмов, объединённых общими признаками и занимающая определённое место в биологической классификации.] (* <- lang_ru;; *);
+<= nrel_subdividing:
+	...
+	(*
+		<- sc_node_tuple;;
+		-> concept_genus;;
+		-> concept_biological_species;;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (таксон)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Таксон — группа организмов, выделенная в биологической систематике на основании общих признаков и отнесённая к определённому таксономическому рангу.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_animal
+			};;
+	*);;

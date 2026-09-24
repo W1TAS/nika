@@ -1,0 +1,17 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+common_remora
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_fish;
+<- concept_cold_blooded_animal;
+<- concept_wild_animal;
+=> nrel_main_idtf:
+	[рыба-прилипала] (* <- lang_ru;; *);
+	[common remora] (* <- lang_en;; *);
+=> nrel_note:
+	[Рыба-прилипала прикрепляется к крупным морским животным при помощи присоски на голове, питаясь остатками их добычи.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Remora remora] (* <- lang_en;; *);
+=> nrel_habitat: ocean;;

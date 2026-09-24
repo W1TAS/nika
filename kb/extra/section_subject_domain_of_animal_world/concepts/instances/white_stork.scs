@@ -1,0 +1,25 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+white_stork
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_bird;
+<- concept_predator;
+<- concept_migratory_animal;
+<- concept_oviparous_animal;
+<- concept_wild_animal;
+<- concept_warm_blooded_animal;
+=> nrel_main_idtf:
+	[белый аист] (* <- lang_ru;; *);
+	[white stork] (* <- lang_en;; *);
+=> nrel_note:
+	[Белый аист — крупная перелётная птица, гнездящаяся рядом с человеком; один из неофициальных символов Беларуси.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Ciconia ciconia] (* <- lang_en;; *);
+=> nrel_species: ciconia_ciconia;
+=> nrel_habitat: meadow;
+=> nrel_behaviour: behaviour_migration;
+=> nrel_body_covering: covering_feather;
+=> nrel_morphological_feature: limb_wing;
+=> nrel_reproduction_type: reproduction_oviparity;;

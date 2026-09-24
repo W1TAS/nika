@@ -1,0 +1,30 @@
+/* Абсолютное понятие предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+concept_arachnid
+<- sc_node_class;
+<- class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[паукообразное] (* <- lang_ru;; *);
+	[arachnid] (* <- lang_en;; *);
+=> nrel_note:
+	[Паукообразные — класс беспозвоночных членистоногих с четырьмя парами ходильных ног и отсутствием усиков.] (* <- lang_ru;; *);
+<= nrel_inclusion: concept_invertebrate;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (паукообразное)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Паукообразное — беспозвоночное членистоногое животное, имеющее четыре пары ходильных ног и лишённое усиков и крыльев.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_invertebrate
+			};;
+	*);;

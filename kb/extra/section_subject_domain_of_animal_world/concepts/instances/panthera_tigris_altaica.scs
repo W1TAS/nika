@@ -1,0 +1,18 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+panthera_tigris_altaica
+<- concept_wit_entity;
+<- concept_taxon;
+<- concept_biological_species;
+<- concept_endangered_species;
+=> nrel_main_idtf:
+	[амурский тигр (вид)] (* <- lang_ru;; *);
+	[Panthera tigris altaica] (* <- lang_en;; *);
+=> nrel_note:
+	[Амурский тигр — подвид тигра, численность которого в природе оценивается примерно в 500–600 особей.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Panthera tigris altaica] (* <- lang_en;; *);
+=> nrel_parent_taxon: panthera;
+=> nrel_conservation_status: status_endangered;
+=> nrel_listed_in_red_book: iucn_red_list;;

@@ -1,0 +1,14 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+artiodactyla
+<- concept_wit_entity;
+<- concept_taxon;
+=> nrel_main_idtf:
+	[Парнокопытные] (* <- lang_ru;; *);
+	[Artiodactyla] (* <- lang_en;; *);
+=> nrel_note:
+	[Парнокопытные — отряд млекопитающих, у которых развиты третий и четвёртый пальцы, несущие основную нагрузку при движении.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Artiodactyla] (* <- lang_en;; *);
+=> nrel_parent_taxon: mammalia;;

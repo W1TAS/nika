@@ -1,0 +1,20 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+taiga_tick
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_arachnid;
+<- concept_invertebrate;
+<- concept_parasite;
+<- concept_wild_animal;
+=> nrel_main_idtf:
+	[таёжный клещ] (* <- lang_ru;; *);
+	[taiga tick] (* <- lang_en;; *);
+=> nrel_note:
+	[Таёжный клещ — кровососущий паразит млекопитающих и человека, переносчик возбудителей клещевого энцефалита и боррелиоза.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Ixodes persulcatus] (* <- lang_en;; *);
+=> nrel_habitat: mixed_forest;
+=> nrel_parasitism: red_deer;
+=> nrel_body_covering: covering_chitin;;

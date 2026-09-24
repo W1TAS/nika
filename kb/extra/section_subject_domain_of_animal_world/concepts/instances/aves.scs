@@ -1,0 +1,14 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+aves
+<- concept_wit_entity;
+<- concept_taxon;
+=> nrel_main_idtf:
+	[Птицы] (* <- lang_ru;; *);
+	[Aves] (* <- lang_en;; *);
+=> nrel_note:
+	[Птицы — класс теплокровных позвоночных, тело которых покрыто перьями.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Aves] (* <- lang_en;; *);
+=> nrel_parent_taxon: chordata;;

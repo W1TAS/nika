@@ -1,0 +1,36 @@
+/* Относительное понятие (отношение) предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+nrel_body_mass
+<- sc_node_non_role_relation;
+<- relation;
+<- concept_wit_entity;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[масса тела*] (* <- lang_ru;; *);
+	[body mass*] (* <- lang_en;; *);
+=> nrel_note:
+	[Связывает животное с характерной для него массой тела.] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_animal;
+=> nrel_second_domain: sc_link;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (масса тела)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Масса тела* — бинарное ориентированное отношение, связывающее животное и характерное для взрослой особи значение массы.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_animal
+			};;
+	*);;

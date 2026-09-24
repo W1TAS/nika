@@ -1,0 +1,24 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+brown_bear
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_mammal;
+<- concept_omnivore;
+<- concept_wild_animal;
+<- concept_warm_blooded_animal;
+<- concept_viviparous_animal;
+=> nrel_main_idtf:
+	[бурый медведь] (* <- lang_ru;; *);
+	[brown bear] (* <- lang_en;; *);
+=> nrel_note:
+	[Бурый медведь — всеядный хищник лесной зоны, впадающий зимой в спячку.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Ursus arctos] (* <- lang_en;; *);
+=> nrel_body_mass:
+	[от 150 до 400 кг] (* <- lang_ru;; *);
+=> nrel_habitat: mixed_forest;
+=> nrel_food_type: food_type_omnivory;
+=> nrel_behaviour: behaviour_hibernation;
+=> nrel_body_covering: covering_wool;;

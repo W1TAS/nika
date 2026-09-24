@@ -1,0 +1,167 @@
+/* Раздел базы знаний и спецификация предметной области животного мира.
+   Лабораторная работа №1 по курсу "Технологии и инструментальные средства
+   проектирования интеллектуальных систем", БГУИР.
+   Все sc-элементы именуются латиницей в соответствии с требованиями
+   Стандарта Технологии OSTIS к синтаксису внешних знаков SC-кода. */
+
+section_subject_domain_of_animal_world
+=> nrel_main_idtf:
+	[Раздел. Предметная область животного мира] (* <- lang_ru;; *);
+	[Section. Subject domain of animal world] (* <- lang_en;; *);
+<- atomic_section;;
+
+/* Структура предметной области: классы объектов исследования
+   и исследуемые отношения */
+
+section_subject_domain_of_animal_world = [*
+subject_domain_of_animal_world
+<- sc_node_struct;
+<- subject_domain;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Предметная область животного мира] (* <- lang_ru;; *);
+	[Subject domain of animal world] (* <- lang_en;; *);
+=> nrel_note:
+	[Предметная область животного мира описывает животных, их биологическую классификацию, среду обитания, питание, поведение, размножение и охрану, а также отношения, связывающие эти сущности между собой.] (* <- lang_ru;; *);
+-> rrel_maximum_studied_object_class:
+	concept_animal;
+	concept_taxon;
+	concept_habitat;
+	concept_ecosystem;
+	concept_morphological_feature;
+	concept_food_chain;
+-> rrel_not_maximum_studied_object_class:
+	concept_vertebrate;
+	concept_invertebrate;
+	concept_mammal;
+	concept_bird;
+	concept_reptile;
+	concept_amphibian;
+	concept_fish;
+	concept_insect;
+	concept_arachnid;
+	concept_mollusk;
+	concept_predator;
+	concept_prey;
+	concept_herbivore;
+	concept_carnivore;
+	concept_omnivore;
+	concept_scavenger;
+	concept_parasite;
+	concept_host_organism;
+	concept_wild_animal;
+	concept_domestic_animal;
+	concept_warm_blooded_animal;
+	concept_cold_blooded_animal;
+	concept_oviparous_animal;
+	concept_viviparous_animal;
+	concept_migratory_animal;
+	concept_genus;
+	concept_biological_species;
+	concept_endangered_species;
+	concept_extinct_species;
+	concept_food_type;
+	concept_life_stage;
+	concept_reproduction_type;
+	concept_body_covering;
+	concept_conservation_status;
+	concept_red_book;
+	concept_animal_behaviour;
+-> rrel_explored_relation:
+	nrel_species;
+	nrel_parent_taxon;
+	nrel_scientific_name;
+	nrel_habitat;
+	nrel_food_type;
+	nrel_predation;
+	nrel_part_of_food_chain;
+	nrel_conservation_status;
+	nrel_listed_in_red_book;
+	nrel_body_mass;
+	nrel_body_covering;
+	nrel_morphological_feature;
+	nrel_reproduction_type;
+	nrel_life_cycle;
+	nrel_behaviour;
+	nrel_symbiosis;
+	nrel_parasitism;
+	nrel_domestication;
+	nrel_population;
+	rrel_predator;
+	rrel_prey;
+	rrel_place;
+	rrel_host;
+	rrel_symbiont;;
+*];;
+
+/* Ключевые sc-элементы раздела */
+
+section_subject_domain_of_animal_world
+-> rrel_key_sc_element:
+	subject_domain_of_animal_world;
+	concept_animal;
+	concept_taxon;
+	concept_habitat;
+	concept_ecosystem;
+	concept_morphological_feature;
+	concept_food_chain;
+	concept_vertebrate;
+	concept_invertebrate;
+	concept_mammal;
+	concept_bird;
+	concept_reptile;
+	concept_amphibian;
+	concept_fish;
+	concept_insect;
+	concept_arachnid;
+	concept_mollusk;
+	concept_predator;
+	concept_prey;
+	concept_herbivore;
+	concept_carnivore;
+	concept_omnivore;
+	concept_scavenger;
+	concept_parasite;
+	concept_host_organism;
+	concept_wild_animal;
+	concept_domestic_animal;
+	concept_warm_blooded_animal;
+	concept_cold_blooded_animal;
+	concept_oviparous_animal;
+	concept_viviparous_animal;
+	concept_migratory_animal;
+	concept_genus;
+	concept_biological_species;
+	concept_endangered_species;
+	concept_extinct_species;
+	concept_food_type;
+	concept_life_stage;
+	concept_reproduction_type;
+	concept_body_covering;
+	concept_conservation_status;
+	concept_red_book;
+	concept_animal_behaviour;
+	nrel_species;
+	nrel_parent_taxon;
+	nrel_scientific_name;
+	nrel_habitat;
+	nrel_food_type;
+	nrel_predation;
+	nrel_part_of_food_chain;
+	nrel_conservation_status;
+	nrel_listed_in_red_book;
+	nrel_body_mass;
+	nrel_body_covering;
+	nrel_morphological_feature;
+	nrel_reproduction_type;
+	nrel_life_cycle;
+	nrel_behaviour;
+	nrel_symbiosis;
+	nrel_parasitism;
+	nrel_domestication;
+	nrel_population;
+	rrel_predator;
+	rrel_prey;
+	rrel_place;
+	rrel_host;
+	rrel_symbiont;;

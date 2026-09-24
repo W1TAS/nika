@@ -1,0 +1,21 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+northern_pike
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_fish;
+<- concept_predator;
+<- concept_carnivore;
+<- concept_cold_blooded_animal;
+<- concept_wild_animal;
+=> nrel_main_idtf:
+	[щука обыкновенная] (* <- lang_ru;; *);
+	[northern pike] (* <- lang_en;; *);
+=> nrel_note:
+	[Щука — пресноводная хищная рыба-засадчик, регулирующая численность мелкой рыбы в водоёме.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Esox lucius] (* <- lang_en;; *);
+=> nrel_habitat: freshwater_body;
+=> nrel_food_type: food_type_carnivory;
+=> nrel_body_covering: covering_scale;;

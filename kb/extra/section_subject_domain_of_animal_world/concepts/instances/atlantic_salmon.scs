@@ -1,0 +1,22 @@
+/* Экземпляры понятий предметной области животного мира.
+   Формализовано в рамках лабораторной работы №1 по курсу ТиИСПИС. */
+
+atlantic_salmon
+<- concept_wit_entity;
+<- concept_animal;
+<- concept_fish;
+<- concept_migratory_animal;
+<- concept_cold_blooded_animal;
+<- concept_wild_animal;
+=> nrel_main_idtf:
+	[атлантический лосось] (* <- lang_ru;; *);
+	[Atlantic salmon] (* <- lang_en;; *);
+=> nrel_note:
+	[Атлантический лосось — проходная рыба: нагуливается в море, а на нерест поднимается в реки, преодолевая пороги и перекаты.] (* <- lang_ru;; *);
+=> nrel_scientific_name:
+	[Salmo salar] (* <- lang_en;; *);
+=> nrel_habitat: freshwater_body;
+=> nrel_behaviour: behaviour_migration;
+=> nrel_body_covering: covering_scale;
+=> nrel_morphological_feature: limb_fin;
+=> nrel_reproduction_type: reproduction_oviparity;;
