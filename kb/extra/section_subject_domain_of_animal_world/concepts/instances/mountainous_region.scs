@@ -1,0 +1,10 @@
+/* Дополнительный экземпляр предметной области животного мира. */
+
+mountainous_region
+<- concept_wit_entity;
+<- concept_habitat;
+=> nrel_main_idtf:
+    [горная местность] (* <- lang_ru;; *);
+    [mountainous region] (* <- lang_en;; *);
+=> nrel_note:
+    [местообитание с горным рельефом, скальными участками и открытыми склонами] (* <- lang_ru;; *);;

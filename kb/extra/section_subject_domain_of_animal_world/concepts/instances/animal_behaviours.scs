@@ -8,7 +8,7 @@ behaviour_hibernation
 	[спячка] (* <- lang_ru;; *);
 	[hibernation] (* <- lang_en;; *);
 => nrel_note:
-	[Спячка — состояние резкого замедления обмена веществ, позволяющее животному пережить неблагоприятный сезон.] (* <- lang_ru;; *);;
+	[состояние резкого замедления обмена веществ, позволяющее животному пережить неблагоприятный сезон] (* <- lang_ru;; *);;
 
 behaviour_migration
 <- concept_wit_entity;
@@ -17,7 +17,7 @@ behaviour_migration
 	[миграция] (* <- lang_ru;; *);
 	[migration] (* <- lang_en;; *);
 => nrel_note:
-	[Миграция — регулярное сезонное перемещение животных между районами размножения и зимовки.] (* <- lang_ru;; *);;
+	[регулярное сезонное перемещение животных между районами размножения и зимовки] (* <- lang_ru;; *);;
 
 behaviour_hunting
 <- concept_wit_entity;
@@ -26,4 +26,67 @@ behaviour_hunting
 	[охотничье поведение] (* <- lang_ru;; *);
 	[hunting behaviour] (* <- lang_en;; *);
 => nrel_note:
-	[Охотничье поведение — совокупность действий хищника по выслеживанию, преследованию и умерщвлению добычи.] (* <- lang_ru;; *);;
+	[совокупность действий хищника по выслеживанию, преследованию и умерщвлению добычи] (* <- lang_ru;; *);;
+
+behaviour_grazing
+<- concept_wit_entity;
+<- concept_animal_behaviour;
+=> nrel_main_idtf:
+    [пастбищное поведение] (* <- lang_ru;; *);
+    [grazing behaviour] (* <- lang_en;; *);
+=> nrel_note:
+    [животное преимущественно пасётся и поедает растительность на открытых участках] (* <- lang_ru;; *);;
+
+behaviour_herd_living
+<- concept_wit_entity;
+<- concept_animal_behaviour;
+=> nrel_main_idtf:
+    [стадный образ жизни] (* <- lang_ru;; *);
+    [herd living] (* <- lang_en;; *);
+=> nrel_note:
+    [животные держатся группами, что помогает им искать пищу и защищаться] (* <- lang_ru;; *);;
+
+behaviour_nocturnal
+<- concept_wit_entity;
+<- concept_animal_behaviour;
+=> nrel_main_idtf:
+    [ночная активность] (* <- lang_ru;; *);
+    [nocturnal activity] (* <- lang_en;; *);
+=> nrel_note:
+    [животное проявляет наибольшую активность в тёмное время суток] (* <- lang_ru;; *);;
+
+behaviour_social
+<- concept_wit_entity;
+<- concept_animal_behaviour;
+=> nrel_main_idtf:
+    [социальное поведение] (* <- lang_ru;; *);
+    [social behaviour] (* <- lang_en;; *);
+=> nrel_note:
+    [животное взаимодействует с сородичами и может жить в устойчивых социальных группах] (* <- lang_ru;; *);;
+
+behaviour_commensalism
+<- concept_wit_entity;
+<- concept_animal_behaviour;
+=> nrel_main_idtf:
+    [комменсальное поведение] (* <- lang_ru;; *);
+    [commensal behaviour] (* <- lang_en;; *);
+=> nrel_note:
+    [животное использует крупного морского хозяина для передвижения и доступа к пище, обычно не причиняя ему вреда] (* <- lang_ru;; *);;
+
+behaviour_scavenging
+<- concept_wit_entity;
+<- concept_animal_behaviour;
+=> nrel_main_idtf:
+    [питание падалью] (* <- lang_ru;; *);
+    [scavenging behaviour] (* <- lang_en;; *);
+=> nrel_note:
+    [животное разыскивает и поедает останки погибших животных] (* <- lang_ru;; *);;
+
+behaviour_parasitism
+<- concept_wit_entity;
+<- concept_animal_behaviour;
+=> nrel_main_idtf:
+    [паразитический образ жизни] (* <- lang_ru;; *);
+    [parasitic behaviour] (* <- lang_en;; *);
+=> nrel_note:
+    [животное питается за счёт организма-хозяина] (* <- lang_ru;; *);;

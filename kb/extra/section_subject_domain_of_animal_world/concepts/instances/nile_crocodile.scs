@@ -14,11 +14,13 @@ nile_crocodile
 	[нильский крокодил] (* <- lang_ru;; *);
 	[Nile crocodile] (* <- lang_en;; *);
 => nrel_note:
-	[Нильский крокодил — крупнейшее пресмыкающееся Африки, подстерегающий добычу у водопоя хищник-засадчик.] (* <- lang_ru;; *);
+	[крупнейшее пресмыкающееся Африки, подстерегающий добычу у водопоя хищник-засадчик] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Crocodylus niloticus] (* <- lang_en;; *);
 => nrel_habitat: freshwater_body;
 => nrel_food_type: food_type_carnivory;
 => nrel_predation: plains_zebra;
 => nrel_body_covering: covering_scale;
-=> nrel_reproduction_type: reproduction_oviparity;;
+=> nrel_reproduction_type: reproduction_oviparity;
+=> nrel_species: nile_crocodile_species;
+=> nrel_behaviour: behaviour_hunting;;

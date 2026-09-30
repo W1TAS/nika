@@ -1,0 +1,13 @@
+/* Видовая сущность для связей предметной области животного мира. */
+
+common_remora_species
+<- concept_wit_entity;
+<- concept_biological_species;
+=> nrel_main_idtf:
+    [рыба-прилипала (вид)] (* <- lang_ru;; *);
+    [Remora remora] (* <- lang_en;; *);
+=> nrel_scientific_name:
+    [Remora remora] (* <- lang_en;; *);
+=> nrel_conservation_status: status_not_evaluated;
+=> nrel_note:
+    [биологический вид, научное название которого — Remora remora] (* <- lang_ru;; *);;

@@ -1,0 +1,13 @@
+/* Видовая сущность для связей предметной области животного мира. */
+
+african_elephant_species
+<- concept_wit_entity;
+<- concept_biological_species;
+=> nrel_main_idtf:
+    [африканский слон (вид)] (* <- lang_ru;; *);
+    [Loxodonta africana] (* <- lang_en;; *);
+=> nrel_scientific_name:
+    [Loxodonta africana] (* <- lang_en;; *);
+=> nrel_conservation_status: status_endangered;
+=> nrel_note:
+    [биологический вид, научное название которого — Loxodonta africana] (* <- lang_ru;; *);;

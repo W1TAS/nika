@@ -1,0 +1,13 @@
+/* Видовая сущность для связей предметной области животного мира. */
+
+cross_spider_species
+<- concept_wit_entity;
+<- concept_biological_species;
+=> nrel_main_idtf:
+    [паук-крестовик (вид)] (* <- lang_ru;; *);
+    [Araneus diadematus] (* <- lang_en;; *);
+=> nrel_scientific_name:
+    [Araneus diadematus] (* <- lang_en;; *);
+=> nrel_conservation_status: status_not_evaluated;
+=> nrel_note:
+    [биологический вид, научное название которого — Araneus diadematus] (* <- lang_ru;; *);;

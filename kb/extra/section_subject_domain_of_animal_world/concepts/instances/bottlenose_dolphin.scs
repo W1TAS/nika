@@ -13,10 +13,12 @@ bottlenose_dolphin
 	[афалина] (* <- lang_ru;; *);
 	[bottlenose dolphin] (* <- lang_en;; *);
 => nrel_note:
-	[Афалина — морское млекопитающее отряда китообразных, обладающее эхолокацией и одним из самых высоких среди животных уровней рассудочной деятельности.] (* <- lang_ru;; *);
+	[морское млекопитающее отряда китообразных, обладающее эхолокацией и одним из самых высоких среди животных уровней рассудочной деятельности] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Tursiops truncatus] (* <- lang_en;; *);
 => nrel_habitat: ocean;
 => nrel_food_type: food_type_carnivory;
 => nrel_morphological_feature: limb_fin;
-=> nrel_reproduction_type: reproduction_viviparity;;
+=> nrel_reproduction_type: reproduction_viviparity;
+=> nrel_species: bottlenose_dolphin_species;
+=> nrel_behaviour: behaviour_social;;

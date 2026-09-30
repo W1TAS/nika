@@ -1,0 +1,13 @@
+/* Видовая сущность для связей предметной области животного мира. */
+
+bottlenose_dolphin_species
+<- concept_wit_entity;
+<- concept_biological_species;
+=> nrel_main_idtf:
+    [афалина (вид)] (* <- lang_ru;; *);
+    [Tursiops truncatus] (* <- lang_en;; *);
+=> nrel_scientific_name:
+    [Tursiops truncatus] (* <- lang_en;; *);
+=> nrel_conservation_status: status_least_concern;
+=> nrel_note:
+    [биологический вид, научное название которого — Tursiops truncatus] (* <- lang_ru;; *);;

@@ -1,0 +1,86 @@
+/* Классы сообщений, распознаваемых системой NIKA в предметной области
+   животного мира. Формализовано в рамках лабораторной работы №2, дополнено
+   в ЛР №3 (все четыре пользовательских класса подключены к concept_message,
+   что делает их видимыми для агента ответа на сообщение).
+
+   Каждое правило `lr_message_about_*` из папки rules/ реагирует на
+   появление в памяти сообщения одного из этих классов и создаёт ответ
+   тем же классом. */
+
+concept_message_about_habitat
+<- sc_node_class;
+<- concept_intent_possible_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[сообщение о местообитании] (* <- lang_ru;; *);
+	[message about habitat] (* <- lang_en;; *);
+=> nrel_wit_ai_idtf:
+	[about_habitat];
+<= nrel_inclusion: concept_message;;
+
+concept_message_about_food
+<- sc_node_class;
+<- concept_intent_possible_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[сообщение о питании] (* <- lang_ru;; *);
+	[message about food] (* <- lang_en;; *);
+=> nrel_wit_ai_idtf:
+	[about_food];
+<= nrel_inclusion: concept_message;;
+
+concept_message_about_conservation
+<- sc_node_class;
+<- concept_intent_possible_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[сообщение об охранном статусе] (* <- lang_ru;; *);
+	[message about conservation status] (* <- lang_en;; *);
+=> nrel_wit_ai_idtf:
+	[about_conservation];
+<= nrel_inclusion: concept_message;;
+
+concept_message_about_scientific_name
+<- sc_node_class;
+<- concept_intent_possible_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[сообщение о научном названии] (* <- lang_ru;; *);
+	[message about scientific name] (* <- lang_en;; *);
+=> nrel_wit_ai_idtf:
+	[about_scientific_name];
+<= nrel_inclusion: concept_message;;
+
+concept_message_about_decomposition
+<- sc_node_class;
+<- concept_intent_possible_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[сообщение о декомпозиции класса] (* <- lang_ru;; *);
+	[message about class decomposition] (* <- lang_en;; *);
+=> nrel_wit_ai_idtf:
+	[about_decomposition];
+<= nrel_inclusion: concept_message;;
+
+/* Дополнительные классы сообщений для правил ЛР №3. */
+concept_message_about_behaviour
+<- sc_node_class;
+<- concept_intent_possible_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+    [сообщение о поведении животного] (* <- lang_ru;; *);
+    [message about animal behaviour] (* <- lang_en;; *);
+=> nrel_wit_ai_idtf:
+    [about_behaviour];
+<= nrel_inclusion: concept_message;;
+
+concept_message_about_reproduction
+<- sc_node_class;
+<- concept_intent_possible_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+    [сообщение о типе размножения животного] (* <- lang_ru;; *);
+    [message about animal reproduction type] (* <- lang_en;; *);
+=> nrel_wit_ai_idtf:
+    [about_reproduction];
+<= nrel_inclusion: concept_message;;

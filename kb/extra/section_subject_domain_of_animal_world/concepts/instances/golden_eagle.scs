@@ -13,11 +13,14 @@ golden_eagle
 	[беркут] (* <- lang_ru;; *);
 	[golden eagle] (* <- lang_en;; *);
 => nrel_note:
-	[Беркут — самый крупный орёл фауны Беларуси, охотящийся на зайцев и птиц средней величины; занесён в Красную книгу Республики Беларусь.] (* <- lang_ru;; *);
+	[самый крупный орёл фауны Беларуси, охотящийся на зайцев и птиц средней величины; занесён в Красную книгу Республики Беларусь] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Aquila chrysaetos] (* <- lang_en;; *);
 => nrel_habitat: mixed_forest;
 => nrel_food_type: food_type_carnivory;
 => nrel_predation: european_hare;
 => nrel_morphological_feature: limb_wing;
-=> nrel_body_covering: covering_feather;;
+=> nrel_body_covering: covering_feather;
+=> nrel_species: golden_eagle_species;
+=> nrel_behaviour: behaviour_hunting;
+=> nrel_reproduction_type: reproduction_oviparity;;

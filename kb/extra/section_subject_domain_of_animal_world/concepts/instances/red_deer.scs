@@ -14,9 +14,12 @@ red_deer
 	[благородный олень] (* <- lang_ru;; *);
 	[red deer] (* <- lang_en;; *);
 => nrel_note:
-	[Благородный олень — крупное травоядное лесов и лесостепей; самцы ежегодно сбрасывают и отращивают ветвистые рога.] (* <- lang_ru;; *);
+	[крупное травоядное лесов и лесостепей; самцы ежегодно сбрасывают и отращивают ветвистые рога] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Cervus elaphus] (* <- lang_en;; *);
 => nrel_habitat: mixed_forest;
 => nrel_food_type: food_type_herbivory;
-=> nrel_morphological_feature: feature_horn;;
+=> nrel_morphological_feature: feature_horn;
+=> nrel_species: red_deer_species;
+=> nrel_behaviour: behaviour_herd_living;
+=> nrel_reproduction_type: reproduction_viviparity;;

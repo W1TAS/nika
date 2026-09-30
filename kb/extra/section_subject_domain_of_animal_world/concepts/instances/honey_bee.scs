@@ -12,7 +12,7 @@ honey_bee
 	[медоносная пчела] (* <- lang_ru;; *);
 	[honey bee] (* <- lang_en;; *);
 => nrel_note:
-	[Медоносная пчела — общественное насекомое, опыляющее растения и производящее мёд; развивается с полным превращением.] (* <- lang_ru;; *);
+	[общественное насекомое, опыляющее растения и производящее мёд; развивается с полным превращением] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Apis mellifera] (* <- lang_en;; *);
 => nrel_habitat: meadow;
@@ -27,4 +27,7 @@ honey_bee
 		-> rrel_2: stage_larva;;
 		-> rrel_3: stage_pupa;;
 		-> rrel_4: stage_imago;;
-	*);;
+	*);
+=> nrel_species: honey_bee_species;
+=> nrel_food_type: food_type_herbivory;
+=> nrel_behaviour: behaviour_social;;

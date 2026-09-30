@@ -12,8 +12,12 @@ domestic_cow
 	[домашняя корова] (* <- lang_ru;; *);
 	[domestic cow] (* <- lang_en;; *);
 => nrel_note:
-	[Домашняя корова — одомашненный потомок тура, основное молочное и мясное сельскохозяйственное животное.] (* <- lang_ru;; *);
+	[одомашненный потомок тура, основное молочное и мясное сельскохозяйственное животное] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Bos taurus] (* <- lang_en;; *);
 => nrel_food_type: food_type_herbivory;
-=> nrel_morphological_feature: feature_horn;;
+=> nrel_morphological_feature: feature_horn;
+=> nrel_species: domestic_cow_species;
+=> nrel_habitat: meadow;
+=> nrel_behaviour: behaviour_grazing;
+=> nrel_reproduction_type: reproduction_viviparity;;

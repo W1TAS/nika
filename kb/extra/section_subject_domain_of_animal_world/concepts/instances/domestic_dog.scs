@@ -12,8 +12,12 @@ domestic_dog
 	[домашняя собака] (* <- lang_ru;; *);
 	[domestic dog] (* <- lang_en;; *);
 => nrel_note:
-	[Домашняя собака — первое одомашненное человеком животное, происходящее от волка.] (* <- lang_ru;; *);
+	[первое одомашненное человеком животное, происходящее от волка] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Canis familiaris] (* <- lang_en;; *);
 => nrel_food_type: food_type_omnivory;
-=> nrel_body_covering: covering_wool;;
+=> nrel_body_covering: covering_wool;
+=> nrel_species: domestic_dog_species;
+=> nrel_habitat: human_settlement;
+=> nrel_behaviour: behaviour_social;
+=> nrel_reproduction_type: reproduction_viviparity;;

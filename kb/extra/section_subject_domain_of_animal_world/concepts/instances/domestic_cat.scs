@@ -13,8 +13,12 @@ domestic_cat
 	[домашняя кошка] (* <- lang_ru;; *);
 	[domestic cat] (* <- lang_en;; *);
 => nrel_note:
-	[Домашняя кошка — одомашненное млекопитающее семейства кошачьих, сохранившее повадки одиночного хищника.] (* <- lang_ru;; *);
+	[одомашненное млекопитающее семейства кошачьих, сохранившее повадки одиночного хищника] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Felis catus] (* <- lang_en;; *);
 => nrel_food_type: food_type_carnivory;
-=> nrel_body_covering: covering_wool;;
+=> nrel_body_covering: covering_wool;
+=> nrel_species: domestic_cat_species;
+=> nrel_habitat: human_settlement;
+=> nrel_behaviour: behaviour_hunting;
+=> nrel_reproduction_type: reproduction_viviparity;;

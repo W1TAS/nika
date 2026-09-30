@@ -10,7 +10,7 @@ panthera_tigris_altaica
 	[амурский тигр (вид)] (* <- lang_ru;; *);
 	[Panthera tigris altaica] (* <- lang_en;; *);
 => nrel_note:
-	[Амурский тигр — подвид тигра, численность которого в природе оценивается примерно в 500–600 особей.] (* <- lang_ru;; *);
+	[подвид тигра, численность которого в природе оценивается примерно в 500–600 особей] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Panthera tigris altaica] (* <- lang_en;; *);
 => nrel_parent_taxon: panthera;

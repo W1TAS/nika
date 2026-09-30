@@ -12,9 +12,13 @@ taiga_tick
 	[таёжный клещ] (* <- lang_ru;; *);
 	[taiga tick] (* <- lang_en;; *);
 => nrel_note:
-	[Таёжный клещ — кровососущий паразит млекопитающих и человека, переносчик возбудителей клещевого энцефалита и боррелиоза.] (* <- lang_ru;; *);
+	[кровососущий паразит млекопитающих и человека, переносчик возбудителей клещевого энцефалита и боррелиоза] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Ixodes persulcatus] (* <- lang_en;; *);
 => nrel_habitat: mixed_forest;
 => nrel_parasitism: red_deer;
-=> nrel_body_covering: covering_chitin;;
+=> nrel_body_covering: covering_chitin;
+=> nrel_species: taiga_tick_species;
+=> nrel_food_type: food_type_carnivory;
+=> nrel_behaviour: behaviour_parasitism;
+=> nrel_reproduction_type: reproduction_oviparity;;

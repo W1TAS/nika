@@ -1,0 +1,13 @@
+/* Видовая сущность для связей предметной области животного мира. */
+
+taiga_tick_species
+<- concept_wit_entity;
+<- concept_biological_species;
+=> nrel_main_idtf:
+    [таёжный клещ (вид)] (* <- lang_ru;; *);
+    [Ixodes persulcatus] (* <- lang_en;; *);
+=> nrel_scientific_name:
+    [Ixodes persulcatus] (* <- lang_en;; *);
+=> nrel_conservation_status: status_not_evaluated;
+=> nrel_note:
+    [биологический вид, научное название которого — Ixodes persulcatus] (* <- lang_ru;; *);;

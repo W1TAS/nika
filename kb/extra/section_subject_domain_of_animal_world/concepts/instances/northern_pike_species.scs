@@ -1,0 +1,13 @@
+/* Видовая сущность для связей предметной области животного мира. */
+
+northern_pike_species
+<- concept_wit_entity;
+<- concept_biological_species;
+=> nrel_main_idtf:
+    [щука обыкновенная (вид)] (* <- lang_ru;; *);
+    [Esox lucius] (* <- lang_en;; *);
+=> nrel_scientific_name:
+    [Esox lucius] (* <- lang_en;; *);
+=> nrel_conservation_status: status_least_concern;
+=> nrel_note:
+    [биологический вид, научное название которого — Esox lucius] (* <- lang_ru;; *);;

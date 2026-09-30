@@ -9,7 +9,7 @@ canis_lupus
 	[волк (вид)] (* <- lang_ru;; *);
 	[Canis lupus] (* <- lang_en;; *);
 => nrel_note:
-	[Canis lupus — биологический вид семейства псовых, широко распространённый в Северном полушарии.] (* <- lang_ru;; *);
+	[биологический вид семейства псовых, широко распространённый в Северном полушарии] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Canis lupus] (* <- lang_en;; *);
 => nrel_parent_taxon: canis;

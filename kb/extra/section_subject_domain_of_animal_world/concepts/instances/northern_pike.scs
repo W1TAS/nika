@@ -18,4 +18,7 @@ northern_pike
 	[Esox lucius] (* <- lang_en;; *);
 => nrel_habitat: freshwater_body;
 => nrel_food_type: food_type_carnivory;
-=> nrel_body_covering: covering_scale;;
+=> nrel_body_covering: covering_scale;
+=> nrel_species: northern_pike_species;
+=> nrel_behaviour: behaviour_hunting;
+=> nrel_reproduction_type: reproduction_oviparity;;

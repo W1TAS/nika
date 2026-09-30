@@ -5,15 +5,14 @@ bison_bonasus
 <- concept_wit_entity;
 <- concept_taxon;
 <- concept_biological_species;
-<- concept_endangered_species;
+<- concept_near_threatened_species;
 => nrel_main_idtf:
 	[зубр (вид)] (* <- lang_ru;; *);
 	[Bison bonasus] (* <- lang_en;; *);
 => nrel_note:
-	[Bison bonasus — вид, полностью истреблённый в дикой природе к 1927 году и восстановленный из особей, содержавшихся в неволе.] (* <- lang_ru;; *);
+	[вид, полностью истреблённый в дикой природе к 1927 году и восстановленный из особей, содержавшихся в неволе] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Bison bonasus] (* <- lang_en;; *);
 => nrel_parent_taxon: bison_genus;
-=> nrel_conservation_status: status_vulnerable;
-=> nrel_listed_in_red_book: red_book_of_belarus;
-=> nrel_listed_in_red_book: iucn_red_list;;
+=> nrel_conservation_status: status_near_threatened;
+=> nrel_listed_in_red_book: red_book_of_belarus;;

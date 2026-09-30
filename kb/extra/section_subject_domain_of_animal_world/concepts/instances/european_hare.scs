@@ -13,9 +13,12 @@ european_hare
 	[заяц-русак] (* <- lang_ru;; *);
 	[European hare] (* <- lang_en;; *);
 => nrel_note:
-	[Заяц-русак — травоядное млекопитающее открытых пространств, спасающееся от хищников быстрым бегом и резкими поворотами.] (* <- lang_ru;; *);
+	[травоядное млекопитающее открытых пространств, спасающееся от хищников быстрым бегом и резкими поворотами] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Lepus europaeus] (* <- lang_en;; *);
 => nrel_habitat: meadow;
 => nrel_food_type: food_type_herbivory;
-=> nrel_part_of_food_chain: forest_food_chain;;
+=> nrel_part_of_food_chain: forest_food_chain;
+=> nrel_species: european_hare_species;
+=> nrel_behaviour: behaviour_nocturnal;
+=> nrel_reproduction_type: reproduction_viviparity;;

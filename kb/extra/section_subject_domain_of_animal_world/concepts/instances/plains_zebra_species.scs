@@ -1,0 +1,13 @@
+/* Видовая сущность для связей предметной области животного мира. */
+
+plains_zebra_species
+<- concept_wit_entity;
+<- concept_biological_species;
+=> nrel_main_idtf:
+    [равнинная зебра (вид)] (* <- lang_ru;; *);
+    [Equus quagga] (* <- lang_en;; *);
+=> nrel_scientific_name:
+    [Equus quagga] (* <- lang_en;; *);
+=> nrel_conservation_status: status_near_threatened;
+=> nrel_note:
+    [биологический вид, научное название которого — Equus quagga] (* <- lang_ru;; *);;

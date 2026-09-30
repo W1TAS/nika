@@ -1,0 +1,13 @@
+/* Видовая сущность для связей предметной области животного мира. */
+
+red_deer_species
+<- concept_wit_entity;
+<- concept_biological_species;
+=> nrel_main_idtf:
+    [благородный олень (вид)] (* <- lang_ru;; *);
+    [Cervus elaphus] (* <- lang_en;; *);
+=> nrel_scientific_name:
+    [Cervus elaphus] (* <- lang_en;; *);
+=> nrel_conservation_status: status_least_concern;
+=> nrel_note:
+    [биологический вид, научное название которого — Cervus elaphus] (* <- lang_ru;; *);;

@@ -14,11 +14,14 @@ plains_zebra
 	[равнинная зебра] (* <- lang_ru;; *);
 	[plains zebra] (* <- lang_en;; *);
 => nrel_note:
-	[Равнинная зебра — травоядное непарнокопытное африканских саванн, известное чёрно-белым полосатым узором, который у каждой особи уникален.] (* <- lang_ru;; *);
+	[травоядное непарнокопытное африканских саванн, известное чёрно-белым полосатым узором, который у каждой особи уникален] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Equus quagga] (* <- lang_en;; *);
 => nrel_body_mass:
 	[около 300 кг] (* <- lang_ru;; *);
 => nrel_habitat: savanna;
 => nrel_food_type: food_type_herbivory;
-=> nrel_part_of_food_chain: savanna_food_chain;;
+=> nrel_part_of_food_chain: savanna_food_chain;
+=> nrel_species: plains_zebra_species;
+=> nrel_behaviour: behaviour_herd_living;
+=> nrel_reproduction_type: reproduction_viviparity;;

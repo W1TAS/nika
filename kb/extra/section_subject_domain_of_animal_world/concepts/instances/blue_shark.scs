@@ -13,9 +13,12 @@ blue_shark
 	[синяя акула] (* <- lang_ru;; *);
 	[blue shark] (* <- lang_en;; *);
 => nrel_note:
-	[Синяя акула — океаническая хищная рыба, которую часто сопровождают рыбы-прилипалы.] (* <- lang_ru;; *);
+	[океаническая хищная рыба, которую часто сопровождают рыбы-прилипалы] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Prionace glauca] (* <- lang_en;; *);
 => nrel_habitat: ocean;
 => nrel_food_type: food_type_carnivory;
-=> nrel_morphological_feature: limb_fin;;
+=> nrel_morphological_feature: limb_fin;
+=> nrel_species: blue_shark_species;
+=> nrel_behaviour: behaviour_migration;
+=> nrel_reproduction_type: reproduction_viviparity;;

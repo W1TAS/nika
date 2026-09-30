@@ -9,7 +9,7 @@ panthera_leo
 	[лев (вид)] (* <- lang_ru;; *);
 	[Panthera leo] (* <- lang_en;; *);
 => nrel_note:
-	[Panthera leo — биологический вид рода пантер; в природе сохранилось порядка 20 тысяч особей.] (* <- lang_ru;; *);
+	[биологический вид рода пантер; в природе сохранилось порядка 20 тысяч особей] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Panthera leo] (* <- lang_en;; *);
 => nrel_parent_taxon: panthera;

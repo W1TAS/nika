@@ -11,10 +11,13 @@ aurochs
 	[тур] (* <- lang_ru;; *);
 	[aurochs] (* <- lang_en;; *);
 => nrel_note:
-	[Тур — вымерший дикий бык, предок современного крупного рогатого скота; последняя особь погибла в 1627 году в Польше.] (* <- lang_ru;; *);
+	[вымерший дикий бык, предок современного крупного рогатого скота; последняя особь погибла в 1627 году в Польше] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Bos primigenius] (* <- lang_en;; *);
 => nrel_species: bos_primigenius;
 => nrel_food_type: food_type_herbivory;
 => nrel_morphological_feature: feature_horn;
-=> nrel_domestication: domestic_cow;;
+=> nrel_domestication: domestic_cow;
+=> nrel_habitat: mixed_forest;
+=> nrel_behaviour: behaviour_herd_living;
+=> nrel_reproduction_type: reproduction_viviparity;;

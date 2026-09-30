@@ -12,7 +12,7 @@ common_frog
 	[травяная лягушка] (* <- lang_ru;; *);
 	[common frog] (* <- lang_en;; *);
 => nrel_note:
-	[Травяная лягушка — земноводное, развитие которого проходит в воде: из икры выходит головастик, дышащий жабрами, и лишь затем превращается во взрослую особь.] (* <- lang_ru;; *);
+	[земноводное, развитие которого проходит в воде: из икры выходит головастик, дышащий жабрами, и лишь затем превращается во взрослую особь] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Rana temporaria] (* <- lang_en;; *);
 => nrel_habitat: freshwater_body;
@@ -24,4 +24,7 @@ common_frog
 		-> rrel_1: stage_egg;;
 		-> rrel_2: stage_tadpole;;
 		-> rrel_3: stage_adult;;
-	*);;
+	*);
+=> nrel_species: common_frog_species;
+=> nrel_behaviour: behaviour_nocturnal;
+=> nrel_reproduction_type: reproduction_oviparity;;

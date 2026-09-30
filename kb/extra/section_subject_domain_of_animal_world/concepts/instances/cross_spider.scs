@@ -12,10 +12,13 @@ cross_spider
 	[паук-крестовик] (* <- lang_ru;; *);
 	[European garden spider] (* <- lang_en;; *);
 => nrel_note:
-	[Паук-крестовик — паукообразное, плетущее колесовидную ловчую сеть; на брюшке имеет характерный светлый крест.] (* <- lang_ru;; *);
+	[паукообразное, плетущее колесовидную ловчую сеть; на брюшке имеет характерный светлый крест] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Araneus diadematus] (* <- lang_en;; *);
 => nrel_habitat: mixed_forest;
 => nrel_food_type: food_type_carnivory;
 => nrel_predation: honey_bee;
-=> nrel_body_covering: covering_chitin;;
+=> nrel_body_covering: covering_chitin;
+=> nrel_species: cross_spider_species;
+=> nrel_behaviour: behaviour_hunting;
+=> nrel_reproduction_type: reproduction_oviparity;;

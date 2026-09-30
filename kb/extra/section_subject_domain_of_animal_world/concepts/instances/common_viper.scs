@@ -12,10 +12,12 @@ common_viper
 	[обыкновенная гадюка] (* <- lang_ru;; *);
 	[common European adder] (* <- lang_en;; *);
 => nrel_note:
-	[Обыкновенная гадюка — ядовитая змея лесной зоны Евразии, охотящаяся на мелких грызунов.] (* <- lang_ru;; *);
+	[ядовитая змея лесной зоны Евразии, охотящаяся на мелких грызунов] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Vipera berus] (* <- lang_en;; *);
 => nrel_habitat: mixed_forest;
 => nrel_food_type: food_type_carnivory;
 => nrel_body_covering: covering_scale;
-=> nrel_reproduction_type: reproduction_ovoviviparity;;
+=> nrel_reproduction_type: reproduction_ovoviviparity;
+=> nrel_species: common_viper_species;
+=> nrel_behaviour: behaviour_hibernation;;

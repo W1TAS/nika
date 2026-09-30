@@ -13,7 +13,7 @@ brown_bear
 	[бурый медведь] (* <- lang_ru;; *);
 	[brown bear] (* <- lang_en;; *);
 => nrel_note:
-	[Бурый медведь — всеядный хищник лесной зоны, впадающий зимой в спячку.] (* <- lang_ru;; *);
+	[всеядный хищник лесной зоны, впадающий зимой в спячку] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Ursus arctos] (* <- lang_en;; *);
 => nrel_body_mass:
@@ -21,4 +21,6 @@ brown_bear
 => nrel_habitat: mixed_forest;
 => nrel_food_type: food_type_omnivory;
 => nrel_behaviour: behaviour_hibernation;
-=> nrel_body_covering: covering_wool;;
+=> nrel_body_covering: covering_wool;
+=> nrel_species: brown_bear_species;
+=> nrel_reproduction_type: reproduction_viviparity;;

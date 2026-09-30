@@ -8,7 +8,7 @@ aves
 	[Птицы] (* <- lang_ru;; *);
 	[Aves] (* <- lang_en;; *);
 => nrel_note:
-	[Птицы — класс теплокровных позвоночных, тело которых покрыто перьями.] (* <- lang_ru;; *);
+	[класс теплокровных позвоночных, тело которых покрыто перьями] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Aves] (* <- lang_en;; *);
 => nrel_parent_taxon: chordata;;

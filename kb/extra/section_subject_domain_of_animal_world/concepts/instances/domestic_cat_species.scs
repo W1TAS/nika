@@ -1,0 +1,13 @@
+/* Видовая сущность для связей предметной области животного мира. */
+
+domestic_cat_species
+<- concept_wit_entity;
+<- concept_biological_species;
+=> nrel_main_idtf:
+    [домашняя кошка (вид)] (* <- lang_ru;; *);
+    [Felis catus] (* <- lang_en;; *);
+=> nrel_scientific_name:
+    [Felis catus] (* <- lang_en;; *);
+=> nrel_conservation_status: status_not_evaluated;
+=> nrel_note:
+    [биологический вид, научное название которого — Felis catus] (* <- lang_ru;; *);;

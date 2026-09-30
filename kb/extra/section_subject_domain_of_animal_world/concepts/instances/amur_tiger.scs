@@ -13,7 +13,7 @@ amur_tiger
 	[амурский тигр] (* <- lang_ru;; *);
 	[Amur tiger] (* <- lang_en;; *);
 => nrel_note:
-	[Амурский тигр — самый крупный подвид тигра, обитающий на Дальнем Востоке; находится под угрозой исчезновения.] (* <- lang_ru;; *);
+	[самый крупный подвид тигра, обитающий на Дальнем Востоке; находится под угрозой исчезновения] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Panthera tigris altaica] (* <- lang_en;; *);
 => nrel_body_mass:
@@ -23,4 +23,5 @@ amur_tiger
 => nrel_food_type: food_type_carnivory;
 => nrel_predation: red_deer;
 => nrel_body_covering: covering_wool;
-=> nrel_behaviour: behaviour_hunting;;
+=> nrel_behaviour: behaviour_hunting;
+=> nrel_reproduction_type: reproduction_viviparity;;

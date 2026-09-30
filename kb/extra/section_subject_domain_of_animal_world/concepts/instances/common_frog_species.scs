@@ -1,0 +1,13 @@
+/* Видовая сущность для связей предметной области животного мира. */
+
+common_frog_species
+<- concept_wit_entity;
+<- concept_biological_species;
+=> nrel_main_idtf:
+    [травяная лягушка (вид)] (* <- lang_ru;; *);
+    [Rana temporaria] (* <- lang_en;; *);
+=> nrel_scientific_name:
+    [Rana temporaria] (* <- lang_en;; *);
+=> nrel_conservation_status: status_least_concern;
+=> nrel_note:
+    [биологический вид, научное название которого — Rana temporaria] (* <- lang_ru;; *);;

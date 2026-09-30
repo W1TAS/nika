@@ -13,7 +13,7 @@ european_bison
 	[зубр] (* <- lang_ru;; *);
 	[European bison] (* <- lang_en;; *);
 => nrel_note:
-	[Зубр — самое крупное наземное млекопитающее Европы, сохранённое от полного истребления благодаря разведению в Беловежской пуще.] (* <- lang_ru;; *);
+	[самое крупное наземное млекопитающее Европы, сохранённое от полного истребления благодаря разведению в Беловежской пуще] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Bison bonasus] (* <- lang_en;; *);
 => nrel_body_mass:
@@ -23,4 +23,6 @@ european_bison
 => nrel_food_type: food_type_herbivory;
 => nrel_part_of_food_chain: forest_food_chain;
 => nrel_morphological_feature: feature_horn;
-=> nrel_body_covering: covering_wool;;
+=> nrel_body_covering: covering_wool;
+=> nrel_behaviour: behaviour_herd_living;
+=> nrel_reproduction_type: reproduction_viviparity;;

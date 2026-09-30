@@ -1,0 +1,10 @@
+/* Дополнительный экземпляр предметной области животного мира. */
+
+human_settlement
+<- concept_wit_entity;
+<- concept_habitat;
+=> nrel_main_idtf:
+    [населённый пункт] (* <- lang_ru;; *);
+    [human settlement] (* <- lang_en;; *);
+=> nrel_note:
+    [искусственно изменённая среда, в которой живут люди и могут обитать домашние животные] (* <- lang_ru;; *);;

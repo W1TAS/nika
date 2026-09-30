@@ -14,7 +14,7 @@ gray_wolf
 	[волк] (* <- lang_ru;; *);
 	[gray wolf] (* <- lang_en;; *);
 => nrel_note:
-	[Волк — крупный хищник семейства псовых, охотящийся стаей; дикий предок домашней собаки.] (* <- lang_ru;; *);
+	[крупный хищник семейства псовых, охотящийся стаей; дикий предок домашней собаки] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Canis lupus] (* <- lang_en;; *);
 => nrel_body_mass:
@@ -26,4 +26,5 @@ gray_wolf
 => nrel_part_of_food_chain: forest_food_chain;
 => nrel_body_covering: covering_wool;
 => nrel_behaviour: behaviour_hunting;
-=> nrel_domestication: domestic_dog;;
+=> nrel_domestication: domestic_dog;
+=> nrel_reproduction_type: reproduction_viviparity;;

@@ -10,7 +10,7 @@ bos_primigenius
 	[тур (вид)] (* <- lang_ru;; *);
 	[Bos primigenius] (* <- lang_en;; *);
 => nrel_note:
-	[Bos primigenius — вымерший вид диких быков, от которого происходит домашний крупный рогатый скот.] (* <- lang_ru;; *);
+	[вымерший вид диких быков, от которого происходит домашний крупный рогатый скот] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Bos primigenius] (* <- lang_en;; *);
 => nrel_parent_taxon: bovidae;

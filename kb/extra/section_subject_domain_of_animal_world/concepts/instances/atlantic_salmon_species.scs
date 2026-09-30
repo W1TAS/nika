@@ -1,0 +1,13 @@
+/* Видовая сущность для связей предметной области животного мира. */
+
+atlantic_salmon_species
+<- concept_wit_entity;
+<- concept_biological_species;
+=> nrel_main_idtf:
+    [атлантический лосось (вид)] (* <- lang_ru;; *);
+    [Salmo salar] (* <- lang_en;; *);
+=> nrel_scientific_name:
+    [Salmo salar] (* <- lang_en;; *);
+=> nrel_conservation_status: status_least_concern;
+=> nrel_note:
+    [биологический вид, научное название которого — Salmo salar] (* <- lang_ru;; *);;

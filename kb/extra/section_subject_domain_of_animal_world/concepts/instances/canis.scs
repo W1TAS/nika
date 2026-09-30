@@ -9,7 +9,7 @@ canis
 	[Волки] (* <- lang_ru;; *);
 	[Canis] (* <- lang_en;; *);
 => nrel_note:
-	[Волки — род семейства псовых, включающий волка, шакала и домашнюю собаку.] (* <- lang_ru;; *);
+	[род семейства псовых, включающий волка, шакала и домашнюю собаку] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Canis] (* <- lang_en;; *);
 => nrel_parent_taxon: canidae;;

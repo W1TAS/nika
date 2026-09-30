@@ -14,7 +14,7 @@ white_stork
 	[белый аист] (* <- lang_ru;; *);
 	[white stork] (* <- lang_en;; *);
 => nrel_note:
-	[Белый аист — крупная перелётная птица, гнездящаяся рядом с человеком; один из неофициальных символов Беларуси.] (* <- lang_ru;; *);
+	[крупная перелётная птица, гнездящаяся рядом с человеком; один из неофициальных символов Беларуси] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Ciconia ciconia] (* <- lang_en;; *);
 => nrel_species: ciconia_ciconia;
@@ -22,4 +22,5 @@ white_stork
 => nrel_behaviour: behaviour_migration;
 => nrel_body_covering: covering_feather;
 => nrel_morphological_feature: limb_wing;
-=> nrel_reproduction_type: reproduction_oviparity;;
+=> nrel_reproduction_type: reproduction_oviparity;
+=> nrel_food_type: food_type_carnivory;;

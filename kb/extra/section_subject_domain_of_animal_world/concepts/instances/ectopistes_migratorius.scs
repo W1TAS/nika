@@ -10,7 +10,7 @@ ectopistes_migratorius
 	[странствующий голубь (вид)] (* <- lang_ru;; *);
 	[Ectopistes migratorius] (* <- lang_en;; *);
 => nrel_note:
-	[Странствующий голубь — вид, ещё в XIX веке насчитывавший миллиарды особей и полностью истреблённый человеком к 1914 году.] (* <- lang_ru;; *);
+	[вид, ещё в XIX веке насчитывавший миллиарды особей и полностью истреблённый человеком к 1914 году] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Ectopistes migratorius] (* <- lang_en;; *);
 => nrel_conservation_status: status_extinct;;

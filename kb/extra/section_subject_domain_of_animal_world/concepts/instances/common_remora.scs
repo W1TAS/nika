@@ -14,4 +14,8 @@ common_remora
 	[Рыба-прилипала прикрепляется к крупным морским животным при помощи присоски на голове, питаясь остатками их добычи.] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Remora remora] (* <- lang_en;; *);
-=> nrel_habitat: ocean;;
+=> nrel_habitat: ocean;
+=> nrel_species: common_remora_species;
+=> nrel_food_type: food_type_carnivory;
+=> nrel_behaviour: behaviour_commensalism;
+=> nrel_reproduction_type: reproduction_oviparity;;

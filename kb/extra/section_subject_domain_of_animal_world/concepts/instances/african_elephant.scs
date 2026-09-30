@@ -13,11 +13,14 @@ african_elephant
 	[африканский слон] (* <- lang_ru;; *);
 	[African elephant] (* <- lang_en;; *);
 => nrel_note:
-	[Африканский слон — крупнейшее наземное животное планеты; хобот служит ему одновременно органом обоняния, осязания и захвата пищи.] (* <- lang_ru;; *);
+	[крупнейшее наземное животное планеты; хобот служит ему одновременно органом обоняния, осязания и захвата пищи] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Loxodonta africana] (* <- lang_en;; *);
 => nrel_body_mass:
 	[до 7 т] (* <- lang_ru;; *);
 => nrel_habitat: savanna;
 => nrel_food_type: food_type_herbivory;
-=> nrel_morphological_feature: feature_trunk;;
+=> nrel_morphological_feature: feature_trunk;
+=> nrel_species: african_elephant_species;
+=> nrel_behaviour: behaviour_migration;
+=> nrel_reproduction_type: reproduction_viviparity;;

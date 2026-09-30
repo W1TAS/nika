@@ -9,7 +9,7 @@ ciconia_ciconia
 	[белый аист (вид)] (* <- lang_ru;; *);
 	[Ciconia ciconia] (* <- lang_en;; *);
 => nrel_note:
-	[Ciconia ciconia — вид перелётных птиц семейства аистовых, гнездящийся в Европе и зимующий в Африке.] (* <- lang_ru;; *);
+	[вид перелётных птиц семейства аистовых, гнездящийся в Европе и зимующий в Африке] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Ciconia ciconia] (* <- lang_en;; *);
 => nrel_conservation_status: status_least_concern;;

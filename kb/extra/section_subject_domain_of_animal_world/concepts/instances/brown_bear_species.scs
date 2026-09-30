@@ -1,0 +1,13 @@
+/* Видовая сущность для связей предметной области животного мира. */
+
+brown_bear_species
+<- concept_wit_entity;
+<- concept_biological_species;
+=> nrel_main_idtf:
+    [бурый медведь (вид)] (* <- lang_ru;; *);
+    [Ursus arctos] (* <- lang_en;; *);
+=> nrel_scientific_name:
+    [Ursus arctos] (* <- lang_en;; *);
+=> nrel_conservation_status: status_least_concern;
+=> nrel_note:
+    [биологический вид, научное название которого — Ursus arctos] (* <- lang_ru;; *);;

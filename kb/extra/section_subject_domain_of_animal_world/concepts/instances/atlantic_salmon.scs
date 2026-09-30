@@ -12,11 +12,13 @@ atlantic_salmon
 	[атлантический лосось] (* <- lang_ru;; *);
 	[Atlantic salmon] (* <- lang_en;; *);
 => nrel_note:
-	[Атлантический лосось — проходная рыба: нагуливается в море, а на нерест поднимается в реки, преодолевая пороги и перекаты.] (* <- lang_ru;; *);
+	[проходная рыба: нагуливается в море, а на нерест поднимается в реки, преодолевая пороги и перекаты] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Salmo salar] (* <- lang_en;; *);
 => nrel_habitat: freshwater_body;
 => nrel_behaviour: behaviour_migration;
 => nrel_body_covering: covering_scale;
 => nrel_morphological_feature: limb_fin;
-=> nrel_reproduction_type: reproduction_oviparity;;
+=> nrel_reproduction_type: reproduction_oviparity;
+=> nrel_species: atlantic_salmon_species;
+=> nrel_food_type: food_type_carnivory;;

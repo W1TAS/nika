@@ -12,9 +12,13 @@ griffon_vulture
 	[белоголовый сип] (* <- lang_ru;; *);
 	[griffon vulture] (* <- lang_en;; *);
 => nrel_note:
-	[Белоголовый сип — крупная хищная птица-падальщик, играющая роль санитара экосистемы: питается преимущественно трупами копытных.] (* <- lang_ru;; *);
+	[крупная хищная птица-падальщик, играющая роль санитара экосистемы: питается преимущественно трупами копытных] (* <- lang_ru;; *);
 => nrel_scientific_name:
 	[Gyps fulvus] (* <- lang_en;; *);
 => nrel_food_type: food_type_scavenging;
 => nrel_morphological_feature: limb_wing;
-=> nrel_body_covering: covering_feather;;
+=> nrel_body_covering: covering_feather;
+=> nrel_species: griffon_vulture_species;
+=> nrel_habitat: mountainous_region;
+=> nrel_behaviour: behaviour_scavenging;
+=> nrel_reproduction_type: reproduction_oviparity;;
