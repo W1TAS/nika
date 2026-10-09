@@ -25,11 +25,21 @@ services:
       dockerfile: ./Dockerfile
     container_name: nika-problem-solver
     restart: unless-stopped
+    # sc-server saves memory on SIGINT; tini forwards it to the process group.
+    stop_signal: SIGINT
+    stop_grace_period: 60s
+    entrypoint:
+      - /usr/bin/tini
+      - -g
+      - --
+      - /bin/bash
+      - /nika/scripts/run_persistent_sc_server.sh
     volumes:
       - ./kb:/nika/kb
       - kb-binary:/nika/kb.bin
       - ./repo.path:/nika/repo.path
       - ./nika.ini:/nika/nika.ini
+      - ./scripts/run_persistent_sc_server.sh:/nika/scripts/run_persistent_sc_server.sh:ro
     networks:
       - nika
     ports:
@@ -43,8 +53,8 @@ services:
       retries: 6
       start_period: 120s
     environment:
-      # Use the commented env variable if you need to rebuild KB every startup.
-      - "REBUILD_KB=1"
+      # Existing SC-memory is reused. An empty volume is built on first startup.
+      - "REBUILD_KB=0"
       - "BINARY_PATH=/nika/bin"
       - "BUILD_PATH=/nika/build"
       - "CONFIG_PATH=/nika/nika.ini"

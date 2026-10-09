@@ -49,10 +49,9 @@ docker compose pull
   - sc-web - `localhost:8000`
   - dialogue web UI - `localhost:3033`
 
-We've set our system to rebuild KB on each restart. If you're debugging some specific subset of your knowledge base you may want to change repo.path to exclude the folders you don't need. 
+The knowledge base is built on the first launch with an empty volume. Later launches reuse the SC-memory saved in the `kb-binary` Docker volume (`REBUILD_KB=0`). Memory is saved every 30 seconds and on graceful shutdown.
 
-If you do not want to rebuild KB on relaunch, you can comment out the `REBUILD_KB` environment variable in `docker-compose.yml`.
-You can use `docker compose run machine build` to rebuild KB manually.
+`docker compose down` preserves this volume; `docker compose down -v` removes the saved knowledge. Changes to source SCS files require an explicit rebuild. To rebuild, first stop NIKA with `docker compose down`, then run `docker compose run --rm --no-deps problem-solver build` and `docker compose up -d`. Rebuilding replaces runtime knowledge with the source KB.
 
 ## Author
 
